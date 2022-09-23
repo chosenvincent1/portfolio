@@ -1,0 +1,659 @@
+@font-face {
+  font-family: "Autography";
+  src: local("Autography"),
+   url("./fonts/Autography/Autography.otf") format("OpenType");
+  font-weight: bold;
+  }
+@font-face {
+  font-family: "Humanist777CondensedBT";
+  src: local("Humanist777CondensedBT"),
+    url("./fonts/Humnst777/Humanist777CondensedBT.ttf") format("OpenType");
+  }
+@font-face {
+  font-family: "Humnst777\ BT\ Bold.ttf";
+  src: local("Humnst777\ BT\ Bold.ttf"),
+    url("./fonts/Humnst777/Humnst777\ BT\ Bold.ttf") format("OpenType");
+  }
+@font-face {
+  font-family: "tt1161m_";
+  src: local("tt1161m_"),
+    url("./fonts/Humnst777/tt1161m_.ttf") format("OpenType");
+  }
+  
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Humanist777CondensedBT", sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.navbar {
+  background-color: #000e1a;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid gray;
+  height: 50px;
+  margin: 0px 50px;
+  padding: 30px 0px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.navbar > .logo {
+  margin-right: auto;
+  margin-left: 20px;
+}
+
+.navbar > .logo > p {
+  font-weight: 700;
+  color: rgb(38, 206, 198);
+  margin-right: auto;
+  text-transform: capitalize;
+  font-size: 2.5rem;
+  cursor: pointer;
+  font-family: "Autography";
+}
+
+
+.navbar > .hamburger-container > img {
+  display: none;
+}
+
+.navbar > .mobile-nav > ul {
+  display: none;
+}
+
+
+.navbar > ul {
+  display: flex;
+  align-items: center;
+}
+
+.navbar > ul > li {
+  font-family: "Humanist777CondensedBT", sans-serif;
+  text-transform: capitalize;
+  color: white; 
+  font-size: 22px;
+  font-weight: 700;
+  list-style: none;
+  cursor: pointer;
+}
+.navbar > ul > li:hover {
+  color: rgb(38, 206, 198);
+}
+.home-navbar, .projects-navbar, .about-navbar {
+  margin-right: 70px;
+}
+.contact-navbar {
+  margin-right: 20px;
+}
+
+
+
+/* Home Page */
+
+.home {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(#000e1a, #004377);
+}
+
+.first-home-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 50px;
+  position: relative;
+  height: 600;
+}
+.first-home-section > .home-text {
+  padding-top: 100px;
+  max-width: 500px;
+  margin: 0px 50px;
+  margin-right: 100px;
+}
+
+.home-text > .first-p, .home-text > .second-p {
+  font-family: "tt1161m_", sans-serif;
+  font-size: 70px;
+  font-weight: 700;
+  margin-bottom: 0;
+  text-transform: capitalize;
+}
+.home-text > .second-p {
+  color: #FF6B00;
+  margin-top: 10px;
+}
+.home-text > .third-p {
+  font-family: "Humanist777CondensedBT", sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  text-transform: capitalize;
+  margin-top: 10px;
+}
+.home-text > .fourth-p {
+  font-size: 18px;
+  color: #747474;
+  margin-bottom: 50px;
+}
+
+.home-text > button {
+  padding: 10px 30px;
+  background-color: #FF6B00;
+  color: white;
+  cursor: pointer;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 10px;
+  text-transform: capitalize;
+}
+
+.first-home-section > .home-image {
+  position: relative;
+}
+.home-image > .skill {
+  /* margin-top: 90px; */
+  /* position: absolute; */
+  top: 100px;
+  height: 50%;
+}
+
+
+.second-home-section {
+  background-color: black;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  padding: 20px 50px;
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.second-home-section > .statistics {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* margin-right: 50px; */
+}
+.second-home-section > .statistics > p {
+  font-family: "Autography", sans-serif;
+  color: white;
+  font-size: 30px;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 0;
+}
+.second-home-section > .statistics > button {
+  width: 300px;
+  padding: 10px 20px;
+  background-color: #FF6B00;
+  color: white;
+  cursor: pointer;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 10px;
+  text-transform: capitalize;
+}
+
+.second-home-section > .quote {
+  max-width: 300px;
+  color: white;
+  font-size: 20px;
+  /* margin-right: 50px; */
+}
+
+.second-home-section > .blog-btn {
+  background-color: white;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  width: 200px;
+  padding: 10px 20px;
+  /* margin-right: 50px; */
+}
+.second-home-section > .blog-btn > p {
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.blog-btn > .btn-arrow {
+  background-color: black;
+  border: none;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 5px 15px;
+  cursor:  pointer;
+}
+.blog-btn > .btn-arrow > img {
+  height: 15px;
+}
+
+
+
+/* ABOUT PAGE */
+
+.about {
+  background-image: linear-gradient(#000e1a, #004377);
+  width: 100%;
+  height: 100vh;
+}
+
+.first-about-section {
+  height: 100%;
+  padding: 80px 50px;
+  line-height: 30px;
+  overflow-y: auto;
+}
+.first-about-section > .greeting {
+  color: white;
+  font-size: 50px;
+  text-transform: capitalize;
+}
+.first-about-section > .introduction {
+  text-transform: capitalize;
+  font-size: 40px;
+  color: rgb(38, 206, 198);
+  line-height: 50px;
+}
+.first-about-section > .text {
+  color: white;
+  text-align: justify;
+  font-size: 20px;
+}
+
+
+
+/* PROJECT PAGE */
+
+.project {
+  background-image: linear-gradient(#000e1a, #004377);
+  width: 100%;
+  height: 100vh;
+}
+
+.grid-items {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20px;
+  justify-content: stretch;
+  padding: 80px 50px 10px 50px;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.grid-items > .grid {
+  width: 100%;
+  height: auto;
+  /* background-color: white;
+  border-radius: 10px; */
+}
+
+.grid-items > .grid > img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  /* border-top-right-radius: 10px;
+  border-top-left-radius: 10px; */
+}
+.grid-items > .grid > p {
+  margin: 0;
+}
+
+
+/* CONTACT PAGE */
+
+.contact {
+  background-image: linear-gradient(#000e1a, #004377);
+  width: 100%;
+  height: 100vh;
+}
+
+.first-contact-section {
+  font-family: "tt1161m_", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 50px 0px 50px;
+  color: white;
+  overflow-y: auto;
+  height: 100%;
+}
+.contact-text {
+  /* background-color: green; */
+  width: 100%;
+  margin-right: 20px;
+  /* line-height: 70px; */
+}
+
+.contact-text > .text-1, .contact-text > .text-2 {
+  margin-bottom: 50px;
+}
+.contact-text > .text-1 {
+  font-size: 3rem;
+}
+.contact-text > .text-2 {
+  font-size: 2rem;
+}
+.contact-text > .text-3 {
+  font-size: 1.2rem;
+}
+
+.contact-text > .social-media {
+  display: flex;
+}
+.contact-text > .social-media > a > .social-icon {
+  height: 50px;
+  margin-right: 10px;
+  cursor: pointer;
+ }
+
+.contact-form {
+  background-color: black;
+  height: fit-content;
+  border-radius: 20px;
+  width: 100%;
+  padding: 20px;
+}
+
+.contact-form > input, .contact-form > .first-last-name > input {
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-bottom: 1px solid white;
+  padding-block: 10px;
+}
+
+.contact-form > .first-last-name {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.contact-form > .first-p-tag {
+  font-size: 1.5rem;
+}
+.contact-form > .first-last-name > input {
+  width: 100%;
+  font-size: 18px;
+}
+.contact-form > .first-last-name > input:focus {
+  outline: none;
+}
+.contact-form > .first-last-name > .first-name {
+  margin-right: 20px;
+}
+
+.contact-form > .email {
+  width: 100%;
+  margin-bottom: 25px;
+  font-size: 18px;
+}
+.contact-form > .email:focus{
+  outline: none;
+}
+
+.contact-form > .second-p-tag {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.contact-form > textarea {
+  min-width: 100%;
+  height: 200px;
+  border: none;
+  font-size: 18px;
+  border-radius: 10px;
+  padding: 20px;
+}
+.contact-form > textarea:focus {
+  outline: none;
+}
+
+.contact-form > .add-file {
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.contact-form > .send-btn {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-family: "tt1161m_", sans-serif;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 992px) {
+  .grid-items {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: stretch;
+  }
+  
+  .grid-items > .grid {
+    width: 100%;
+    height: 300px;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    height: 50px;
+    margin: 0px 40px;
+   
+  }
+  
+  .navbar > .logo {
+    margin-right: auto;
+    margin-left: 10px;
+  }
+  
+  .navbar > .logo > p {
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 2rem;
+  }
+  
+  .navbar > ul {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar > ul > li {
+    font-family: "Humanist777CondensedBT", sans-serif;
+    text-transform: capitalize;
+    color: white; 
+    font-size: 18px;
+    font-weight: 700;
+    list-style: none;
+    cursor: pointer;
+  }
+
+  .home-navbar, .projects-navbar, .about-navbar {
+    margin-right: 50px;
+  }
+  .contact-navbar {
+    margin-right: 10px;
+  }
+
+  /* PROJECT PAGE */
+  
+  .grid-items {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: stretch;
+    padding: 80px 40px 10px 40px;
+
+  }
+  
+  .grid-items > .grid {
+    width: 100%;
+    height: 300px;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  /* CONTACT PAGE */
+
+  .first-contact-section {
+    display: flex;
+    flex-direction: column;
+    padding: 70px 50px 10px 50px;
+  }
+  .contact-text {
+    width: auto;
+    margin-bottom: 50px;
+  }
+  
+  .contact-text > .text-1, .contact-text > .text-2 {
+    margin-bottom: 30px;
+  }
+  .contact-text > .text-1 {
+    font-size: 2rem;
+  }
+  .contact-text > .text-2 {
+    font-size: 1.5rem;
+  }
+  .contact-text > .text-3 {
+    font-size: 1.2rem;
+  }
+}
+
+/* MOBILE VIEW */
+@media only screen and (max-width: 600px){
+  .navbar {
+    background-color: #000e1a;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    height: 50px;
+    margin: 0px 50px;
+    padding: 30px 0px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+  }
+  
+  .navbar > .logo {
+    margin-right: auto;
+    margin-left: 20px;
+  }
+  
+  .navbar > .logo > p {
+    margin-right: auto;
+    font-size: 2rem;
+  }
+
+  .navbar > .hamburger-container {
+    background-color: white;
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+  }
+  .navbar > .hamburger-container > .hamburger, .navbar > .hamburger-container > .cancel {
+    width: 100%;
+    display:block;
+    height: auto;
+  }
+  .navbar > .hamburger-container > .remove-hamburger, .navbar > .hamburger-container > .remove-cancel {
+    display: none;
+  }
+  
+  .navbar > .mobile-nav {
+    width: 200px;
+    height: 180px;
+    background-color: #000e1a;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: absolute;
+    right: 0;
+    top: 60px;
+  }
+  .navbar > .mobile-nav > ul {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+  }
+  .navbar > .mobile-nav > ul > li {
+    font-family: "Humanist777CondensedBT", sans-serif;
+    text-transform: capitalize;
+    color: white; 
+    font-size: 18px;
+    font-weight: 700;
+    list-style: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+    padding: 5px;
+  }
+
+  .navbar > .mobile-nav > ul > li:hover {
+    background-color: #004377;
+  }
+
+  .navbar > ul {
+    display: none;
+  }
+  
+
+
+
+  /* PROJECT PAGE */
+  .project {
+    background-image: linear-gradient(#000e1a, #004377);
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .grid-items {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: stretch;
+    grid-gap: 20px;
+    padding: 80px 50px 10px 50px;
+  }
+  
+  .grid-items > .grid {
+    width: 100%;
+    height: auto;
+  }
+
+  /* ABOUT PAGE */
+
+  .first-about-section > .greeting {
+    font-size: 30px;
+  }
+
+  .first-about-section > .introduction {
+    font-size: 20px;
+  }
+
+  .first-about-section > .text {
+    font-size: 16px;
+  }
+}
