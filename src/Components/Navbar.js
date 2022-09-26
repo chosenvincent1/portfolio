@@ -12,8 +12,6 @@ const Navbar = ()=> {
         <div className="navbar">
             <div className="logo">
             <p>chosen</p>
-            <FaBars />
-            <FaTimes />
             </div>
             <ul>
                 <li className="home-navbar">home</li>
@@ -21,9 +19,9 @@ const Navbar = ()=> {
                 <li className="about-navbar">about</li>
                 <li className="contact-navbar">contact me</li>
             </ul>
-            <div className="hamburger-container" onClick={clickHamburger}>
-                <img src="./logo512.png" alt="hamburger" className={ hamburger ? "remove-hamburger " : "hamburger "} />
-                <img src="./images/instagram.png" alt="cancel" className={hamburger ? "cancel" : "remove-cancel"} />
+            <div className="hamburger-container" onClick={clickHamburger} >
+                <FaBars id="menu" className= { `menu ${hamburger ? "remove-hamburger " : "hamburger "}`} />
+                <FaTimes id="menu" className={`menu ${hamburger ? "cancel" : "remove-cancel"}`} />
             </div>
 
             <div className="mobile-nav" style={{display: hamburger? 'block': 'none'}}>

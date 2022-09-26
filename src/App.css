@@ -65,7 +65,7 @@ body {
 }
 
 
-.navbar > .hamburger-container > img {
+.navbar > .hamburger-container > .menu {
   display: none;
 }
 
@@ -570,19 +570,16 @@ body {
   }
 
   .navbar > .hamburger-container {
-    background-color: white;
     margin-right: 20px;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    padding: 5px;
     cursor: pointer;
   }
+  
   .navbar > .hamburger-container > .hamburger, .navbar > .hamburger-container > .cancel {
-    width: 100%;
     display:block;
-    height: auto;
+    color: white;
+    font-size: 30px;
   }
+  
   .navbar > .hamburger-container > .remove-hamburger, .navbar > .hamburger-container > .remove-cancel {
     display: none;
   }
@@ -614,9 +611,9 @@ body {
     padding: 5px;
   }
 
-  .navbar > .mobile-nav > ul > li:hover {
+  /* .navbar > .mobile-nav > ul > li:hover {
     background-color: #004377;
-  }
+  } */
 
   .navbar > ul {
     display: none;
