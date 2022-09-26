@@ -1,5 +1,7 @@
 import React from 'react';
+import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import Navbar from '../Components/Navbar';
+
 
 const Contact = ()=> {
     
@@ -13,17 +15,20 @@ const Contact = ()=> {
                     <p className='text-2'>Send a request</p>
                     <p className='text-3'>You can also contact me on</p>
                     <div className='social-media'>
-                        <a href=''>
-                        <img src='./images/whatsApp.png' alt='whatsApp' className='social-icon whatsApp' />
+                        <a href='https://www.twitter.com/chosenvincent1'>
+                            <FaTwitter className='social-icon' />
                         </a>
-                        <a href=''>
-                            <img src='./images/facebook.png' alt='facebook' className='social-icon facebook' />
+                        <a href='https://github.com/chosenvincent1'>
+                            <FaGithub className='social-icon' />
                         </a>
-                        <a href=''>
-                            <img src='./images/instagram.png' alt='instagram' className='social-icon instagram' />
+                        <a href='https://www.linkedin.com/in/chosenvincent1-674613217'>
+                            <FaLinkedin className='social-icon' />
                         </a>
-                        <a href=''>
-                            <img src='./images/linkedin.png' alt='linkedin' className='social-icon linkedin' />
+                        <a href='https://www.instagram.com/chosenvincent1'>
+                            <FaInstagram className='social-icon' />
+                        </a>
+                        <a href='https://www.facebook.com/vincent.chosen.1'>
+                            <FaFacebook className='social-icon' />
                         </a>                        
                     </div>
                 </div>

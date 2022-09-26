@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Navbar = ()=> {
     const [hamburger, setHamburger] = useState(false)
@@ -11,6 +12,8 @@ const Navbar = ()=> {
         <div className="navbar">
             <div className="logo">
             <p>chosen</p>
+            <FaBars />
+            <FaTimes />
             </div>
             <ul>
                 <li className="home-navbar">home</li>

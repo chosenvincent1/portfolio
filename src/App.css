@@ -360,8 +360,10 @@ body {
   display: flex;
 }
 .contact-text > .social-media > a > .social-icon {
-  height: 50px;
-  margin-right: 10px;
+  /* height: 100px; */
+  font-size: 40px;
+  color: white;
+  margin-right: 20px;
   cursor: pointer;
  }
 

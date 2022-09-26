@@ -12,8 +12,8 @@ function App() {
     <div>
       {/* <Home /> */}
       {/* <About /> */}
-      <Project />
-      {/* <Contact /> */}
+      {/* <Project /> */}
+      <Contact />
     </div>
   );
 }
