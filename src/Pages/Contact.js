@@ -27,9 +27,9 @@ const Contact = ()=> {
                         <a href='https://www.instagram.com/chosenvincent1'>
                             <FaInstagram className='social-icon' />
                         </a>
-                        <a href='https://www.facebook.com/vincent.chosen.1'>
+                        {/* <a href='https://www.facebook.com/vincent.chosen.1'>
                             <FaFacebook className='social-icon' />
-                        </a>                        
+                        </a>                         */}
                     </div>
                 </div>
                 <form className='contact-form'>
@@ -52,6 +52,26 @@ const Contact = ()=> {
                     </div>
                     <button className='send-btn'>Send Request</button>
                 </form>
+                <div className='mobile-contact-text'>
+                    <p className='text-3'>You can also contact me on</p>
+                    <div className='social-media'>
+                        <a href='https://www.twitter.com/chosenvincent1'>
+                            <FaTwitter className='social-icon' />
+                        </a>
+                        <a href='https://github.com/chosenvincent1'>
+                            <FaGithub className='social-icon' />
+                        </a>
+                        <a href='https://www.linkedin.com/in/chosenvincent1-674613217'>
+                            <FaLinkedin className='social-icon' />
+                        </a>
+                        <a href='https://www.instagram.com/chosenvincent1'>
+                            <FaInstagram className='social-icon' />
+                        </a>
+                        <a href='https://www.facebook.com/vincent.chosen.1'>
+                            <FaFacebook className='social-icon' />
+                        </a>                        
+                    </div>
+                </div>
             </section>
          </div>
     )
