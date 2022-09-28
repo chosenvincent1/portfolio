@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaTwitter, FaPaperclip } from 'react-icons/fa';
 import Navbar from '../Components/Navbar';
 
 
@@ -27,9 +27,9 @@ const Contact = ()=> {
                         <a href='https://www.instagram.com/chosenvincent1'>
                             <FaInstagram className='social-icon' />
                         </a>
-                        {/* <a href='https://www.facebook.com/vincent.chosen.1'>
+                        <a href='https://www.facebook.com/vincent.chosen.1'>
                             <FaFacebook className='social-icon' />
-                        </a>                         */}
+                        </a>                        
                     </div>
                 </div>
                 <form className='contact-form'>
@@ -43,13 +43,11 @@ const Contact = ()=> {
                     
                     <p className='second-p-tag'>Little description about your project</p>
                     <textarea />
-                    <div className='add-file'>
-                        <div className='add-attachment'>
-                            <img src='' alt='' className='attachment-icon' />
-                            <p className='attachment-text'>Add attachment</p>
-                        </div>
-                        {/* <input type="file" /> */}
-                    </div>
+                    <label className='add-file' htmlFor='attachment-input'>
+                        <FaPaperclip />
+                        <p className='attachment-text'>Add attachment</p>
+                        <input type="file" className='attachment-input' id='attachment-input'/>  
+                    </label>                      
                     <button className='send-btn'>Send Request</button>
                 </form>
                 <div className='mobile-contact-text'>
