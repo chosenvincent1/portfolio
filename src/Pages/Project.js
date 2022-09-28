@@ -3,12 +3,11 @@ import Grid from "../Components/Grid";
 import Navbar from "../Components/Navbar";
 import Data from "../Projects/Data";
 
-const Project = ({image, name, description})=> {
+const Project = ()=> {
     const projects = Data.map((project, index) => {
         return <Grid key={index} {...project} />
     })
 
-    console.log(image);
 
     return (
         <div className="project">
