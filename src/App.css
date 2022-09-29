@@ -456,7 +456,7 @@ body {
   margin-right: 8px;
 }
 .contact-form > .add-file > .attachment-input {
-  /* display: none; */
+  display: none;
 }
 
 .contact-form > .send-btn {

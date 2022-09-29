@@ -1,10 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaTwitter, FaPaperclip } from 'react-icons/fa';
 import Navbar from '../Components/Navbar';
 
 
 const Contact = ()=> {
-    
+    const [data, setData] = useState({
+        firstName: '',
+        lastName: ''
+    })
+
+    const [file, setFile] = useState([])
+
+    const handleChange = ()=> {
+        
+    }
+
+    const handleSubmit = (e)=> {
+        e.preventDefault();
+    }
+
     return(
          <div className='contact'>
             <Navbar />
@@ -32,21 +46,38 @@ const Contact = ()=> {
                         </a>                        
                     </div>
                 </div>
-                <form className='contact-form'>
+                <form className='contact-form' onSubmit={handleSubmit}>
                     <p className='first-p-tag'>I'm interested in a website</p>
                     <div className='first-last-name'>
-                        <input type="text" className="first-name" placeholder='First Name' />
-                        <input type="text" className="last-name" placeholder='Last Name' />
+                        <input 
+                            type="text" 
+                            className="first-name" 
+                            placeholder='First Name'
+                            onChange={handleChange}
+                        />
+                        <input 
+                            type="text" 
+                            className="last-name" 
+                            placeholder='Last Name' 
+                        />
                     </div>
                     <br />
-                    <input type="email" className="email" placeholder='Email' />
+                    <input 
+                        type="email" 
+                        className="email" 
+                        placeholder='Email'
+                    />
                     
                     <p className='second-p-tag'>Little description about your project</p>
                     <textarea />
                     <label className='add-file' htmlFor='attachment-input'>
                         <FaPaperclip />
                         <p className='attachment-text'>Add attachment</p>
-                        <input type="file" className='attachment-input' id='attachment-input'/>  
+                        <input 
+                            type="file" 
+                            className='attachment-input' 
+                            id='attachment-input'
+                        />
                     </label>                      
                     <button className='send-btn'>Send Request</button>
                 </form>
