@@ -9,14 +9,22 @@ const Home = ()=> {
 
             <section className="first-home-section">
                 <div className="home-text">
+                    <h1 className="logo">chosen</h1>
                     <p className="first-p">hi, i'm</p>
                     <p className="second-p">chosen vincent,</p>
-                    <p className="third-p">(a full-stack web developer)</p>
+                    <p className="third-p">(web developer)</p>
                     <p className="fourth-p">“I’m Highly Experienced in Html, CSS, JavaScript, React, and Nodejs”</p>
-                    <button>hire me!</button>
+                    <button>Download CV</button>
                 </div>
 
                 <div className="home-image">
+                    <div className="home-image-btn">
+                        <button className="btn">lets' talk</button>
+                    </div>
+                    <img src="/images/developer.png" alt="" className="developer" />
+                    <img src="/images/html.png" alt="" className="html" />
+                    <img src="/images/css.png" alt="" className="css" />
+                    <img src="/images/javascript.png" alt="" className="javascript" />
                 </div>
             </section>
 

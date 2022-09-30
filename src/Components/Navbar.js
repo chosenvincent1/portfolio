@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { FaBars, FaBriefcase, FaHome, FaPhoneSquare, FaTimes } from 'react-icons/fa';
 import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = ()=> {
@@ -19,7 +19,16 @@ const Navbar = ()=> {
 
     return(
         <div className="navbar">
-            <div className="logo">
+            <FaHome className="home-nav-icon" />
+            <FaBriefcase className="project-nav-icon" />
+            <FaPhoneSquare className="contact-nav-icon" />
+        </div>
+    )
+}
+
+export default Navbar
+
+{/* <div className="logo">
             <p>chosen</p>
             </div>
             <ul>
@@ -72,9 +81,4 @@ const Navbar = ()=> {
                         <Link to='/contact'>contact me</Link>
                     </li>
                 </ul>
-            </div>
-        </div>
-    )
-}
-
-export default Navbar
+            </div> */}
