@@ -1,6 +1,7 @@
 
 import React from "react";
 import Navbar from "../Components/Navbar";
+import Project from "./Project";
 // import SecondNavbar from "../Components/SecondNavbar";
 
 const Home = ()=> {

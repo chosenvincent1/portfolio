@@ -25,8 +25,8 @@ const Contact = ()=> {
             
             <section className='first-contact-section'>
                 <div className='contact-text'>
-                    <p className='text-1'>Need a project? <br /> I would love to help</p>
-                    <p className='text-2'>Send a request</p>
+                    <p className='text-1'>Need a project? <br />Contact me, I would love to help</p>
+                    <p className='text-2'>Send a Request</p>
                     <p className='text-3'>You can also contact me on</p>
                     <div className='social-media'>
                         <a href='https://www.twitter.com/chosenvincent1'>
@@ -79,7 +79,7 @@ const Contact = ()=> {
                             id='attachment-input'
                         />
                     </label>                      
-                    <button className='send-btn'>Send Request</button>
+                    <button className='send-btn'>Send</button>
                 </form>
                 <div className='mobile-contact-text'>
                     <p className='text-3'>You can also contact me on</p>
