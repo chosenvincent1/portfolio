@@ -1,4 +1,5 @@
 import React from "react";
+import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
 const Grid = ({image, name, description, link})=> {
@@ -8,10 +9,10 @@ const Grid = ({image, name, description, link})=> {
     }
 
     return(
-        <div className="grid" onClick={redirect}>
+        <div className="project-image" onClick={redirect}>
             <img src={image} />
-            <p className="project-name">{name}</p>
-            <p className="project-description">{description}</p>
+            {/* <p className="project-name">{name}</p>
+            <p className="project-description">{description}</p> */}
         </div>
     )
 }

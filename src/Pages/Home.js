@@ -1,6 +1,7 @@
 
 import React from "react";
 import Navbar from "../Components/Navbar";
+// import SecondNavbar from "../Components/SecondNavbar";
 
 const Home = ()=> {
     return (
@@ -17,14 +18,23 @@ const Home = ()=> {
                     <button>Download CV</button>
                 </div>
 
+                <div className="project-completed">
+                    <p>over 207 <span className="plus">+</span></p>
+                    <p>projects <span className="completed">completed</span></p>
+                    <p><span className="percent">100%</span> reliable</p>
+                </div>
+
                 <div className="home-image">
                     <div className="home-image-btn">
                         <button className="btn">lets' talk</button>
                     </div>
                     <img src="/images/developer.png" alt="" className="developer" />
-                    <img src="/images/html.png" alt="" className="html" />
+                    {/* <img src="/images/html.png" alt="" className="html" />
                     <img src="/images/css.png" alt="" className="css" />
                     <img src="/images/javascript.png" alt="" className="javascript" />
+                    <img src="/images/react.png" alt="" className="react" />
+                    <img src="/images/node.png" alt="" className="node" />
+                    <img src="/images/mongodb.png" alt="" className="mongodb" /> */}
                 </div>
             </section>
 

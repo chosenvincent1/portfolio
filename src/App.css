@@ -45,7 +45,7 @@ body {
   height: 40px;
   padding: 30px;
   position: fixed;
-  bottom: 5%;
+  bottom: 3%;
   left: 50%;
   transform: translateX(-50%);
   z-index: 10;
@@ -91,7 +91,6 @@ body {
 
 .first-home-section {
   display: flex;
-  /* justify-content: start; */
   position: relative;
   height: 100%;
   width: 100%;
@@ -151,6 +150,35 @@ body {
   text-transform: capitalize;
 }
 
+.first-home-section > .project-completed {
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: "Humanist777CondensedBT", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: capitalize;
+  width: 250px;
+  height: 90px;
+  z-index: 10;
+  text-align: center;
+}
+.first-home-section > .project-completed > p {
+  margin: 2px 0px;
+}
+.first-home-section > .project-completed > p > .plus, .first-home-section > .project-completed > p > .percent {
+  color: rgb(7, 232, 7);
+  font-weight: 900;
+}
+
+.first-home-section > .project-completed > p > .completed {
+  color: rgb(249, 11, 51);
+  font-weight: 900;
+}
+
 .first-home-section > .home-image {
   position: relative;
   background-color: #C3C0C0;
@@ -177,18 +205,48 @@ body {
 
 .home-image > .developer {
   margin-top: 70px;
-  position:static;
-  height: 75%;
-}
-
-.home-image > .html, .home-image > .css, .home-image > .javascript {
-  height: 50px;
+  height: 80%;
+  margin-left: 100px;
 }
 
 .home-image > .html {
+  height: 50px;
   position: absolute;
   top: 100px;
   right: 100px;
+}
+
+.home-image > .css {
+  height: 50px;
+  position: absolute;
+  top: 200px;
+  right: 250px;
+}
+
+.home-image > .javascript {
+  height: 50px;
+  position: absolute;
+  top: 200px;
+  right: 50px;
+}
+
+.home-image > .react {
+  height: 30px;
+  position: absolute;
+  top: 250px;
+  right: 250px;
+}
+.home-image > .node {
+  height: 50px;
+  position: absolute;
+  top: 200px;
+  right: 50px;
+}
+.home-image > .mongodb {
+  height: 50px;
+  position: absolute;
+  top: 200px;
+  right: 50px;
 }
 
 .second-home-section > .blog-btn {
@@ -225,13 +283,13 @@ body {
 
 /* ABOUT PAGE */
 
-.about {
+/* .about {
   background-image: linear-gradient(#000e1a, #004377);
   width: 100%;
   height: 100vh;
-}
+} */
 
-.first-about-section {
+/* .first-about-section {
   height: 100%;
   padding: 80px 50px;
   line-height: 30px;
@@ -252,29 +310,80 @@ body {
   color: white;
   text-align: justify;
   font-size: 20px;
+} */
+
+
+/* PROJECTS */
+.project-image {
+  width: 500px;
+  /* height: 100px; */
+  margin: 0px 20px;
 }
 
+.project-image > .project-image {
+  color: white;
+  font-size: 50px;
+}
 
+.project-image > img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
 
 /* PROJECT PAGE */
 
 .project {
-  background-image: linear-gradient(#000e1a, #004377);
+  background-color: black;
   width: 100%;
   height: 100vh;
 }
 
-.grid-items {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-gap: 20px;
-  justify-content: stretch ;
-  padding: 80px 55px 20px 55px;
-  height: 100%;
-  overflow-y: auto;
+.project > .about {
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+  margin-bottom: 30px;
+}  
+
+.project > .about > h1 {
+  text-transform: capitalize;
+  font-size: 2.5rem;
 }
 
-.grid-items > .grid {
+.project > .about > p {
+  font-size: 1.2rem;
+  color: gray;
+
+}
+
+.project > h1 {
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  /* margin-top: 20px; */
+}
+
+.project > .project-arrow-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project > .project-arrow-container > .arrow-left, .project > .project-arrow-container > .arrow-right {
+  color: white;
+  font-size: 40px;
+  font-weight: lighter;
+  cursor: pointer;
+}
+
+.project > .project-arrow-container > .project-container {
+  display: flex;
+  justify-content: center;
+}
+
+
+/* .grid-items > .grid {
   width: 100%;
   height: auto;
   background-color: white;
@@ -290,15 +399,13 @@ body {
   height: auto;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  /* border-top-right-radius: 10px;
-  border-top-left-radius: 10px; */
 }
 .grid-items > .grid > p {
   color: black;
   font-size: 18px;
   margin: 0;
   padding-left: 8px;
-}
+} */
 
 
 /* CONTACT PAGE */
