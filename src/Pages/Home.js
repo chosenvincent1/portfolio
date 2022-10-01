@@ -11,10 +11,10 @@ const Home = ()=> {
 
             <section className="first-home-section">
                 <div className="home-text">
-                    <h1 className="logo">chosen</h1>
+                    {/* <h1 className="logo">chosen</h1> */}
                     <p className="first-p">hi!</p>
                     <p className="second-p">i'm chosen,</p>
-                    {/* <p className="third-p">(web developer)</p> */}
+                    <p className="third-p">web developer</p>
                     <p className="fourth-p">“I’m a Web Developer with a solid background in JavaScript and React. i'm also a MERN Stack Developer”</p>
                     <button>Download CV</button>
                 </div>
@@ -34,8 +34,8 @@ const Home = ()=> {
                     <img src="/images/javascript.png" alt="" className="javascript" />
                     <img src="/images/react.png" alt="" className="react" />
                     <img src="/images/node.png" alt="" className="node" />
-                    {/* <img src="/images/mongodb.png" alt="" className="mongodb" /> */}
                     <img src="/images/developer.png" alt="" className="developer" />
+                    {/* <img src="/images/mongodb.png" alt="" className="mongodb" /> */}
                 </div>
             </section>
 

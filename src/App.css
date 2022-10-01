@@ -34,6 +34,11 @@ body {
   height: 100vh;
 }
 
+.all-pages {
+  width: 100%;
+  height: 100vh;
+}
+
 
 .navbar {
   background-color: rgba(142, 142, 142, .3);
@@ -56,7 +61,7 @@ body {
   cursor: pointer;
 }
 
-.navbar > .home-nav-icon {
+.navbar > .nav-icon:hover {
   color: #FF6B00;
 }
 
@@ -182,7 +187,7 @@ body {
 .first-home-section > .home-image {
   position: relative;
   background-color: #C3C0C0;
-  width: 800px;
+  max-width: 500px;
 }
 
 .first-home-section > .home-image > .home-image-btn {
@@ -191,7 +196,6 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 20px;
-  /* background-color: red; */
 }
 
 .first-home-section > .home-image > .home-image-btn > .btn {
@@ -206,7 +210,6 @@ body {
 }
 
 .home-image > .developer {
-  /* margin-top: 20px; */
   height: 80%;
   margin-left: 100px;
 }
@@ -230,7 +233,7 @@ body {
 .home-image > .javascript {
   height: 50px;
   /* position: relative; */
-  transform: translate(250px, 150px);
+  transform: translate(200px, 100px);
 }
 .home-image > .react {
   height: 30px;
@@ -275,39 +278,6 @@ body {
 .blog-btn > .btn-arrow > img {
   height: 15px;
 }
-
-
-
-/* ABOUT PAGE */
-
-/* .about {
-  background-image: linear-gradient(#000e1a, #004377);
-  width: 100%;
-  height: 100vh;
-} */
-
-/* .first-about-section {
-  height: 100%;
-  padding: 80px 50px;
-  line-height: 30px;
-  overflow-y: auto;
-}
-.first-about-section > .greeting {
-  color: white;
-  font-size: 50px;
-  text-transform: capitalize;
-}
-.first-about-section > .introduction {
-  text-transform: capitalize;
-  font-size: 40px;
-  color: rgb(38, 206, 198);
-  line-height: 50px;
-}
-.first-about-section > .text {
-  color: white;
-  text-align: justify;
-  font-size: 20px;
-} */
 
 
 /* PROJECTS */
@@ -386,21 +356,6 @@ body {
 .project > .project-arrow-container > p > .small-text {
   font-size: 1.5rem;
 }
-/* .project > .project-arrow-container > .text-1 {
-  transform: translateY(0%);
-  transform: translateX(0%);
-  color: black;
-}
-.project > .project-arrow-container > .text-2 {
-  transform: translateY(80%);
-  transform: translateX(0%);
-  color: black;
-}
-.project > .project-arrow-container > .text-3 {
-  transform: translateY(-60%);
-  transform: translateX(0%);
-  color: black;
-} */
 
 .project > .project-arrow-container > .project-container {
   display: flex;

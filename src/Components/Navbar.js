@@ -5,9 +5,9 @@ const Navbar = ()=> {
 
     return(
         <div className="navbar">
-            <FaHome className="home-nav-icon" />
-            <FaBriefcase className="project-nav-icon" />
-            <FaPhone className="contact-nav-icon" />
+            <FaHome className="nav-icon home-nav-icon" />
+            <FaBriefcase className="nav-icon project-nav-icon" />
+            <FaPhone className="nav-icon contact-nav-icon" />
         </div>
     )
 }

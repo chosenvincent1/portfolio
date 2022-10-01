@@ -5,13 +5,14 @@ import Project from './Pages/Project';
 import Contact from './Pages/Contact';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import AllPages from './Pages/AllPages';
 
 
 function App() {
 
   return (
     <div>
-      <Project />
+      <AllPages />
       {/* <Routes>
         <Route path='/' element={ <Home /> } />
         <Route path='/project' element={ <Project /> } />
