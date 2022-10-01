@@ -65,17 +65,51 @@ body {
   color: #FF6B00;
 }
 
+.second-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: red; */
+  height: 90px;
+}
 
-/* .navbar > .logo > p {
+.second-navbar > .logo > p {
   font-weight: 700;
-  color: rgb(38, 206, 198);
+  color: #FF6B00;
   margin-right: auto;
   text-transform: capitalize;
   font-size: 2.5rem;
   cursor: pointer;
   font-family: "Autography";
-} */
+}
 
+.second-navbar > ul {
+  display: flex;
+  margin-right: 20px;
+}
+.second-navbar > ul > li {
+  list-style: none;
+  margin-right: 50px;
+}
+.second-navbar > ul > li > a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.second-navbar > .download-cv {
+  padding: 10px 15px;
+  background-color: #FF6B00;
+  color: white;
+  cursor: pointer;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  text-transform: capitalize;
+  margin-right: 20px;
+}
 
 /* .navbar > .hamburger-container > .menu {
   display: none;
@@ -143,7 +177,7 @@ body {
   margin-bottom: 50px;
 }
 
-.home-text > button {
+.home-text > .hire-me {
   padding: 10px 30px;
   background-color: #FF6B00;
   color: white;

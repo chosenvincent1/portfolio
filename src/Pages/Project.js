@@ -5,11 +5,38 @@ import Navbar from "../Components/Navbar";
 import Data from "../Projects/Data";
 
 const Project = ()=> {
-    const projects = Data.map((project, index) => {
-        return <Card key={index} {...project} />
-    })
-
     const [hover, setHover] = useState(false);
+
+    const [slide, setSlide] = useState(Data);
+    const [currentPosition, setCurrentPositon] = useState(0)
+
+    let currentIndexValue = slide[currentPosition];
+
+    const nextProject = ()=> {
+        if (currentPosition !== slide.length - 1) {
+            setCurrentPositon(currentPosition + 1) 
+        } else {
+            setCurrentPositon(currentPosition = 0)
+        }
+        currentIndexValue = slide[currentPosition];
+    }
+
+    console.log(slide.length-1)
+
+    const prevProject = ()=> {
+        if (currentPosition !== 0) {
+            setCurrentPositon(currentPosition - 1)  
+        } else {
+            setCurrentPositon(currentPosition = slide.length - 1)
+        }
+        
+        currentIndexValue = slide[currentPosition];
+    }
+    
+
+    // const projects = Data.map((project, index) => {
+    //     return <Card key={index} {...project} />
+    // })
 
     const handleMouseOver = ()=> {
         setHover(true)
@@ -22,7 +49,7 @@ const Project = ()=> {
 
     return (
         <div className="project">
-            <Navbar />
+            {/* <Navbar /> */}
             <div className="about">
                 <h1>about me</h1>
                 <p>I’m a Web Developer and Technical Write. I build amazing UI using HTML, CSS, JavaScript, React and NodeJs.</p>
@@ -30,8 +57,11 @@ const Project = ()=> {
             </div>
             <h1>Projects</h1>
             <div className="project-arrow-container">
-                <FaAngleLeft className="arrow-left" />
-
+                <FaAngleLeft 
+                    className="arrow-left" 
+                    onClick={prevProject}
+                    style={{display: currentPosition===0 ? 'none' : ''}}
+                />
                 <p 
                     className="text-1"
                     style={{display: hover ? 'block' : 'none'}}
@@ -41,9 +71,13 @@ const Project = ()=> {
                     onMouseOver={handleMouseOver}
                     onMouseOut={handleMouseOut}
                 >
-                    {projects}
+                    <Card currentIndexValue={currentIndexValue} />
                 </div>
-                <FaAngleRight className="arrow-right" />
+                <FaAngleRight 
+                    className="arrow-right" 
+                    onClick={nextProject}
+                    style={{display: currentPosition === slide.length-1 ? 'none' : ''}}
+                />
             </div>
             
         </div>

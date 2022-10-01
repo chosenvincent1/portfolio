@@ -8,7 +8,7 @@ const AllPages = ()=> {
         <div className="all-pages">
           <Home />
           <Project />
-          <Contact /> 
+          {/* <Contact />  */}
         </div>
     )
 }

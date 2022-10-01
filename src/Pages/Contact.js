@@ -21,7 +21,7 @@ const Contact = ()=> {
 
     return(
          <div className='contact'>
-            <Navbar />
+            {/* <Navbar /> */}
         
             <section className='first-contact-section'>
                 <div className='contact-text'>

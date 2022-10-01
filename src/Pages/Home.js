@@ -1,22 +1,22 @@
 
 import React from "react";
 import Navbar from "../Components/Navbar";
+import SecondNavbar from "../Components/SecondNavbar";
 import Project from "./Project";
 // import SecondNavbar from "../Components/SecondNavbar";
 
 const Home = ()=> {
     return (
         <div className="home">
-            <Navbar />
-
             <section className="first-home-section">
                 <div className="home-text">
+                    <SecondNavbar />
                     {/* <h1 className="logo">chosen</h1> */}
                     <p className="first-p">hi!</p>
                     <p className="second-p">i'm chosen,</p>
                     <p className="third-p">web developer</p>
                     <p className="fourth-p">“I’m a Web Developer with a solid background in JavaScript and React. i'm also a MERN Stack Developer”</p>
-                    <button>Download CV</button>
+                    <button className="hire-me">Hire me</button>
                 </div>
 
                 <div className="project-completed">

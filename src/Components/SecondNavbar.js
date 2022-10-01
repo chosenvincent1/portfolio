@@ -19,7 +19,7 @@ const SecondNavbar = ()=> {
     const splitLocation = pathname.split('/');
 
     return (
-        <div>
+        <div className="second-navbar">
             <div className="logo">
             <p>chosen</p>
             </div>
@@ -38,13 +38,13 @@ const SecondNavbar = ()=> {
                         >projects
                     </Link>
                 </li>
-                <li className="about-navbar">
+                {/* <li className="about-navbar">
                     <Link
                         className={splitLocation[1] === 'about' ? 'active' : ''}
                         to='/about'
                         >about
                     </Link>
-                </li>
+                </li> */}
                 <li className="contact-navbar">
                     <Link
                         className={splitLocation[1] === 'contact' ? 'active' : ''}
@@ -53,7 +53,8 @@ const SecondNavbar = ()=> {
                     </Link>
                 </li>
             </ul>
-            <div className="hamburger-container" onClick={clickHamburger} >
+            <button className="download-cv">Download CV</button>
+            {/* <div className="hamburger-container" onClick={clickHamburger} >
                 <FaBars id="menu" className= { `menu ${hamburger ? "remove-hamburger " : "hamburger "}`} />
                 <FaTimes id="menu" className={`menu ${hamburger ? "cancel" : "remove-cancel"}`} />
             </div>
@@ -73,7 +74,7 @@ const SecondNavbar = ()=> {
                         <Link to='/contact'>contact me</Link>
                     </li>
                 </ul>
-            </div>
+            </div> */}
         </div>
     )
 }

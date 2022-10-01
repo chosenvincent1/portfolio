@@ -2,7 +2,7 @@ import React from "react";
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
-const Grid = ({image, name, description, link})=> {
+const Grid = ({image, name, description, link, currentIndexValue})=> {
 
     const redirect = ()=> {
         window.location.replace(link)
@@ -10,7 +10,7 @@ const Grid = ({image, name, description, link})=> {
 
     return(
         <div className="project-image" onClick={redirect}>
-            <img src={image} />
+            <img src={currentIndexValue.image} />
             {/* <p className="project-name">{name}</p>
             <p className="project-description">{description}</p> */}
         </div>
