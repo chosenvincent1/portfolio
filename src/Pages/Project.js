@@ -21,6 +21,11 @@ const Project = ()=> {
             <h1>Projects</h1>
             <div className="project-arrow-container">
                 <FaAngleLeft className="arrow-left" />
+                <div className="project-description">
+                    <h1>Farm Website</h1>
+                    <h1>Full-Stack Project</h1>
+                    <h3>Click to Visit Site</h3>
+                </div>
 \                <div className="project-container">
                     {projects}
                 </div>
