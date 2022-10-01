@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import Card from "../Components/Card";
 import Navbar from "../Components/Navbar";
@@ -8,6 +8,16 @@ const Project = ()=> {
     const projects = Data.map((project, index) => {
         return <Card key={index} {...project} />
     })
+
+    const [hover, setHover] = useState(false);
+
+    const handleMouseOver = ()=> {
+        setHover(true)
+        
+    }
+    const handleMouseOut = ()=> {
+        setHover(false)
+    }
 
 
     return (
@@ -21,12 +31,16 @@ const Project = ()=> {
             <h1>Projects</h1>
             <div className="project-arrow-container">
                 <FaAngleLeft className="arrow-left" />
-                <div className="project-description">
-                    <h1>Farm Website</h1>
-                    <h1>Full-Stack Project</h1>
-                    <h3>Click to Visit Site</h3>
-                </div>
-\                <div className="project-container">
+
+                <p 
+                    className="text-1"
+                    style={{display: hover ? 'block' : 'none'}}
+                    >Farm Website <br />Full-Stack Project <br /> <span className="small-text">Click to Visit Site</span></p>
+            
+                <div className="project-container" 
+                    onMouseOver={handleMouseOver}
+                    onMouseOut={handleMouseOut}
+                >
                     {projects}
                 </div>
                 <FaAngleRight className="arrow-right" />

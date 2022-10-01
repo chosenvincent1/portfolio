@@ -313,19 +313,19 @@ body {
 /* PROJECTS */
 .project-image {
   width: 500px;
-  /* height: 100px; */
-  margin: 0px 20px;
-}
-
-.project-image > .project-image {
-  color: white;
-  font-size: 50px;
+  border-radius: 10px;
+  height: 320px;
+  /* margin: 0px 10px; */
 }
 
 .project-image > img {
   width: 100%;
   height: auto;
   border-radius: 10px;
+  cursor: pointer;
+}
+.project-image > img:hover {
+  opacity: 0.2;
 }
 
 /* PROJECT PAGE */
@@ -358,7 +358,6 @@ body {
   text-align: center;
   color:#FF6B00;
   font-size: 2rem;
-  /* margin-top: 20px; */
 }
 
 .project > .project-arrow-container {
@@ -369,62 +368,45 @@ body {
 }
 
 .project > .project-arrow-container > .arrow-left, .project > .project-arrow-container > .arrow-right {
-  color: white;
+  color: gray;
   font-size: 40px;
   font-weight: lighter;
   cursor: pointer;
+  margin: 0px 20px;
 }
 
-.project > .project-arrow-container > .project-description {
-  width: 510px;
-  height: 330px;
-  margin: 0px 20px;
-  background-color: rgba(0, 0, 0, .9);
-  color: gray;
-  position: absolute;
-  transform: translateY(-1%);
-  transform: translateX(1%);
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.project > .project-arrow-container > .project-description > h1 {
-  margin: 0;
-  margin-bottom: 10px;
+.project > .project-arrow-container > p {
+  display: none;
+  font-size: 2.5rem;
+  text-align: center;
   font-weight: 700;
+  position: absolute;
+  color: gray;
 }
+.project > .project-arrow-container > p > .small-text {
+  font-size: 1.5rem;
+}
+/* .project > .project-arrow-container > .text-1 {
+  transform: translateY(0%);
+  transform: translateX(0%);
+  color: black;
+}
+.project > .project-arrow-container > .text-2 {
+  transform: translateY(80%);
+  transform: translateX(0%);
+  color: black;
+}
+.project > .project-arrow-container > .text-3 {
+  transform: translateY(-60%);
+  transform: translateX(0%);
+  color: black;
+} */
 
 .project > .project-arrow-container > .project-container {
   display: flex;
   justify-content: center;
 }
 
-
-/* .grid-items > .grid {
-  width: 100%;
-  height: auto;
-  background-color: white;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  cursor: pointer;
-}
-
-.grid-items > .grid > img {
-  width: 100%;
-  height: auto;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-.grid-items > .grid > p {
-  color: black;
-  font-size: 18px;
-  margin: 0;
-  padding-left: 8px;
-} */
 
 
 /* CONTACT PAGE */
