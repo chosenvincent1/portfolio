@@ -22,9 +22,11 @@ const Contact = ()=> {
     return(
          <div className='contact'>
             <Navbar />
-            
+        
             <section className='first-contact-section'>
                 <div className='contact-text'>
+                    <div className='circle first-circle'></div>
+                    <div className='circle second-circle'></div>
                     <p className='text-1'>Need a project? <br />Contact me, I would love to help</p>
                     <p className='text-2'>Send a Request</p>
                     <p className='text-3'>You can also contact me on</p>

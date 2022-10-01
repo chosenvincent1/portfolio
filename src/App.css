@@ -36,16 +36,16 @@ body {
 
 
 .navbar {
-  background-color: #8E8E8E;
+  background-color: rgba(142, 142, 142, .3);
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 300px;
-  border-radius: 20px;
+  justify-content: space-around;
+  width: 350px;
   height: 40px;
   padding: 30px;
   position: fixed;
-  bottom: 3%;
+  bottom: 10px;
+  border-radius: 3px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 10;
@@ -99,8 +99,7 @@ body {
   background-color: black;
   width: 100%;
   height: 100%;
-  padding-left: 30px;
-  padding-top: 0;
+  padding-left: 50px;
 }
 .home-text > .logo {
   color: #FF6B00;
@@ -109,6 +108,7 @@ body {
   text-transform: capitalize;
   font-size: 2.5rem;
   cursor: pointer;
+  margin: 0;
 }
 .home-text > .first-p, .home-text > .second-p {
   font-family: "tt1161m_", sans-serif;
@@ -196,57 +196,54 @@ body {
 
 .first-home-section > .home-image > .home-image-btn > .btn {
   padding: 8px 20px;
-  border:  2px solid black;
+  border:  3px solid black;
+  font-family: "Humanist777CondensedBT", sans-serif;
   font-size: 18px;
+  font-weight: 700;
   border-radius: 5px;
   text-transform: capitalize;
   cursor: pointer;
 }
 
 .home-image > .developer {
-  margin-top: 70px;
+  /* margin-top: 20px; */
   height: 80%;
   margin-left: 100px;
 }
 
 .home-image > .html {
   height: 50px;
-  position: absolute;
-  top: 100px;
+  /* position: relative; */
+  bottom: 500px;
   right: 100px;
+  transform: translate(260px, 20px);
 }
 
 .home-image > .css {
   height: 50px;
-  position: absolute;
-  top: 200px;
+  /* position: relative; */
+  bottom: 200px;
   right: 250px;
+  transform: translate(40px, 150px);
 }
 
 .home-image > .javascript {
   height: 50px;
-  position: absolute;
-  top: 200px;
-  right: 50px;
+  /* position: relative; */
+  transform: translate(250px, 150px);
 }
-
 .home-image > .react {
   height: 30px;
-  position: absolute;
-  top: 250px;
-  right: 250px;
+  transform: translate(50px, 230px);
+
 }
 .home-image > .node {
-  height: 50px;
-  position: absolute;
-  top: 200px;
-  right: 50px;
+  height: 40px;
+  transform: translate(-50px, 400px);
 }
 .home-image > .mongodb {
   height: 50px;
-  position: absolute;
-  top: 200px;
-  right: 50px;
+  transform: translate(40px, 150px);
 }
 
 .second-home-section > .blog-btn {
@@ -340,13 +337,13 @@ body {
 }
 
 .project > .about {
-  color: white;
   text-align: center;
   padding-top: 10px;
   margin-bottom: 30px;
 }  
 
 .project > .about > h1 {
+  color:#FF6B00;
   text-transform: capitalize;
   font-size: 2.5rem;
 }
@@ -359,7 +356,7 @@ body {
 
 .project > h1 {
   text-align: center;
-  color: white;
+  color:#FF6B00;
   font-size: 2rem;
   /* margin-top: 20px; */
 }
@@ -421,13 +418,31 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 20px 50px 0px 50px;
-  /* color: white; */
   height: 100%;
 }
+
 .contact-text {
+  position: relative;
   width: 100%;
-  /* margin-right: 20px; */
-  margin-top: 100px;
+}
+
+.contact-text > .first-circle {
+  background: linear-gradient(230.57deg, #F15701 38.97%, #FEC705 75.93%);
+  position: sticky;
+  top: 100px;
+  left: 100px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.contact-text > .second-circle {
+  background: linear-gradient(230.57deg, #F15701 38.97%, #FEC705 75.93%);
+  position: sticky;
+  top: 570px;
+  left: 400px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
 
 .contact-text > .text-1 {

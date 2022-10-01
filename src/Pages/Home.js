@@ -12,10 +12,10 @@ const Home = ()=> {
             <section className="first-home-section">
                 <div className="home-text">
                     <h1 className="logo">chosen</h1>
-                    <p className="first-p">hi, i'm</p>
-                    <p className="second-p">chosen vincent,</p>
-                    <p className="third-p">(web developer)</p>
-                    <p className="fourth-p">“I’m Highly Experienced in Html, CSS, JavaScript, React, and Nodejs”</p>
+                    <p className="first-p">hi!</p>
+                    <p className="second-p">i'm chosen,</p>
+                    {/* <p className="third-p">(web developer)</p> */}
+                    <p className="fourth-p">“I’m a Web Developer with a solid background in JavaScript and React. i'm also a MERN Stack Developer”</p>
                     <button>Download CV</button>
                 </div>
 
@@ -29,13 +29,13 @@ const Home = ()=> {
                     <div className="home-image-btn">
                         <button className="btn">lets' talk</button>
                     </div>
-                    <img src="/images/developer.png" alt="" className="developer" />
-                    {/* <img src="/images/html.png" alt="" className="html" />
+                    <img src="/images/html.png" alt="" className="html" />
                     <img src="/images/css.png" alt="" className="css" />
                     <img src="/images/javascript.png" alt="" className="javascript" />
                     <img src="/images/react.png" alt="" className="react" />
                     <img src="/images/node.png" alt="" className="node" />
-                    <img src="/images/mongodb.png" alt="" className="mongodb" /> */}
+                    {/* <img src="/images/mongodb.png" alt="" className="mongodb" /> */}
+                    <img src="/images/developer.png" alt="" className="developer" />
                 </div>
             </section>
 

@@ -12,12 +12,12 @@ export default [
     //     description: 'FullStack Project',
     //     link: 'https://github.com/chosenvincent1'
     // },
-    {
-        image: './project/project-5.jpeg',
-        name: 'Farm Website',
-        description: 'Frontend Project',
-        link: 'https://www.instagram.com/chosenvincent1'
-    },
+    // {
+    //     image: './project/project-5.jpeg',
+    //     name: 'Farm Website',
+    //     description: 'Frontend Project',
+    //     link: 'https://www.instagram.com/chosenvincent1'
+    // },
     // {
     //     image: './project/project-6.jpg',
     //     name: 'Farm Website',
