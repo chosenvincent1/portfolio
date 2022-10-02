@@ -177,7 +177,7 @@ body {
 .first-home-section > .home-text > .fourth-p {
   font-size: 18px;
   color: #747474;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .first-home-section > .home-text > .hire-me {
@@ -190,6 +190,7 @@ body {
   font-weight: 600;
   border-radius: 10px;
   text-transform: capitalize;
+  margin-bottom: 20px;
 }
 
 .first-home-section > .home-text > .project-completed {
@@ -215,6 +216,20 @@ body {
 .first-home-section > .home-text > .project-completed > p > .plus, .first-home-section > .home-text > .project-completed > p > .percent {
   color: rgb(7, 232, 7);
   font-weight: 900;
+}
+
+.first-home-section > .home-text > .home-social-media {
+  display: flex;
+}
+
+.first-home-section > .home-text > .home-social-media > a {
+  text-decoration: none;
+}
+
+.first-home-section > .home-text > .home-social-media > a > .social-icon {
+  font-size: 30px;
+  color: white;
+  margin-right: 20px;
 }
 
 .first-home-section > .home-text > .project-completed > p > .completed {

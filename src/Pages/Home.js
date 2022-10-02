@@ -3,6 +3,8 @@ import React from "react";
 import Navbar from "../Components/Navbar";
 import SecondNavbar from "../Components/SecondNavbar";
 import Project from "./Project";
+import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
+
 // import SecondNavbar from "../Components/SecondNavbar";
 
 const Home = ()=> {
@@ -22,6 +24,23 @@ const Home = ()=> {
                         <p><span className="percent">100%</span> reliable</p>
                     </div>
                     <button className="hire-me">Hire me</button>
+                    <div className='home-social-media'>
+                        <a href='https://www.twitter.com/chosenvincent1'>
+                            <FaTwitter className='social-icon' />
+                        </a>
+                        <a href='https://github.com/chosenvincent1'>
+                            <FaGithub className='social-icon' />
+                        </a>
+                        <a href='https://www.linkedin.com/in/chosenvincent1-674613217'>
+                            <FaLinkedin className='social-icon' />
+                        </a>
+                        <a href='https://www.instagram.com/chosenvincent1'>
+                            <FaInstagram className='social-icon' />
+                        </a>
+                        <a href='https://www.facebook.com/vincent.chosen.1'>
+                            <FaFacebook className='social-icon' />
+                        </a>                        
+                    </div>
                 </div>
 
                 {/* <div className="project-completed">
