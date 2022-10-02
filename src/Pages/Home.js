@@ -12,17 +12,17 @@ const Home = ()=> {
         <div className="home">
             <section className="first-home-section">
                 <div className="home-text">
-                    <SecondNavbar />
+                    <SecondNavbar className='second-navbar' />
                     {/* <h1 className="logo">chosen</h1> */}
                     <p className="first-p">hi!</p>
                     <p className="second-p">i'm chosen,</p>
                     {/* <p className="third-p">web developer</p> */}
-                    <p className="fourth-p">“I’m a Web Developer with a solid background in JavaScript and React. i'm also a MERN Stack Developer”</p>
-                    <div className="project-completed">
+                    <p className="fourth-p">“I’m a Web Developer with a solid background in JavaScript and React. <br /> i'm also a MERN Stack Developer”</p>
+                    {/* <div className="project-completed">
                         <p>over 207 <span className="plus">+</span></p>
                         <p>projects <span className="completed">completed</span></p>
                         <p><span className="percent">100%</span> reliable</p>
-                    </div>
+                    </div> */}
                     <button className="hire-me">Hire me</button>
                     <div className='home-social-media'>
                         <a href='https://www.twitter.com/chosenvincent1'>
@@ -42,6 +42,7 @@ const Home = ()=> {
                         </a>                        
                     </div>
                 </div>
+                
 
                 {/* <div className="project-completed">
                     <p>over 207 <span className="plus">+</span></p>

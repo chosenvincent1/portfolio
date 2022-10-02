@@ -70,7 +70,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* background-color: red; */
   height: 90px;
 }
 
@@ -136,11 +135,19 @@ body {
   height: 100%;
   width: 100%;
 }
+
 .first-home-section > .home-text {
   background-color: black;
   width: 100%;
   height: 100%;
   padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+}
+
+.first-home-section > .home-text > .second-navbar {
+  margin-bottom: 50px;
 }
 /* .first-home-section > .home-text > .logo {
   color: #FF6B00;
@@ -151,7 +158,7 @@ body {
   cursor: pointer;
   margin-top: 100px;
 } */
-.first-home-section > .home-text > .first-p, .first-home-section >  .home-text > .second-p {
+.first-home-section > .home-text > .first-p, .first-home-section > .home-text > .second-p {
   font-family: "tt1161m_", sans-serif;
   font-size: 70px;
   font-weight: 700;
@@ -190,7 +197,8 @@ body {
   font-weight: 600;
   border-radius: 10px;
   text-transform: capitalize;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
+  width: 150px;
 }
 
 .first-home-section > .home-text > .project-completed {
@@ -433,6 +441,9 @@ body {
 .contact-text {
   position: relative;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .contact-text > .first-circle {
@@ -456,13 +467,13 @@ body {
 
 .contact-text > .text-1 {
   font-size: 3rem;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   color: black;
   line-height: 50px;
 }
 .contact-text > .text-2 {
   font-size: 2.9rem;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   color: #FF6B00;
 }
 .contact-text > .text-3 {
