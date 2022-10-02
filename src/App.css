@@ -354,6 +354,22 @@ body {
   opacity: 0.2;
 }
 
+/* PROJECT CIRCLE */
+.project-circle {
+  display: flex;
+  justify-content: center;
+  /* background-color: red; */
+  align-items: center;
+  margin-top: 20px;
+}
+.project-circle > .circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #FF6B00;
+  margin-right: 5px;
+}
+
 /* PROJECT PAGE */
 
 .project {
@@ -387,14 +403,14 @@ body {
   font-size: 2rem;
 }
 
-.project > .project-arrow-container {
+.project > .project-container > .project-arrow-container {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
 }
 
-.project > .project-arrow-container > .arrow-left, .project > .project-arrow-container > .arrow-right {
+.project > .project-container > .project-arrow-container > .arrow-left, .project > .project-container > .project-arrow-container > .arrow-right {
   color: gray;
   font-size: 40px;
   font-weight: lighter;
@@ -402,7 +418,7 @@ body {
   margin: 0px 20px;
 }
 
-.project > .project-arrow-container > p {
+.project > .project-container > .project-arrow-container > p {
   display: none;
   font-size: 2.5rem;
   text-align: center;
@@ -410,11 +426,11 @@ body {
   position: absolute;
   color: gray;
 }
-.project > .project-arrow-container > p > .small-text {
+.project > .project-container > .project-arrow-container > p > .small-text {
   font-size: 1.5rem;
 }
 
-.project > .project-arrow-container > .project-container {
+.project > .project-container > .project-arrow-container > .project-container {
   display: flex;
   justify-content: center;
 }

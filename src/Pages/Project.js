@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import Card from "../Components/Card";
 import Navbar from "../Components/Navbar";
+import ImageCircle from "../Components/ImageCircle";
 import Data from "../Projects/Data";
 
 const Project = ()=> {
@@ -56,28 +57,31 @@ const Project = ()=> {
                 <p>I’m also a student of the University Of Port Harcourt, I’m a proud Nigerian living in my home town of Port Harcourt, Rivers State.</p>
             </div>
             <h1>Projects</h1>
-            <div className="project-arrow-container">
-                <FaAngleLeft 
-                    className="arrow-left" 
-                    onClick={prevProject}
-                    style={{display: currentPosition===0 ? 'none' : ''}}
-                />
-                <p 
-                    className="text-1"
-                    style={{display: hover ? 'block' : 'none'}}
-                    >Farm Website <br />Full-Stack Project <br /> <span className="small-text">Click to Visit Site</span></p>
-            
-                <div className="project-container" 
-                    onMouseOver={handleMouseOver}
-                    onMouseOut={handleMouseOut}
-                >
-                    <Card currentIndexValue={currentIndexValue} />
+            <div className="project-container">
+                <div className="project-arrow-container">
+                    <FaAngleLeft 
+                        className="arrow-left" 
+                        onClick={prevProject}
+                        style={{display: currentPosition===0 ? 'none' : ''}}
+                    />
+                    <p 
+                        className="text-1"
+                        style={{display: hover ? 'block' : 'none'}}
+                        >Farm Website <br />Full-Stack Project <br /> <span className="small-text">Click to Visit Site</span></p>
+                
+                    <div className="project-container" 
+                        onMouseOver={handleMouseOver}
+                        onMouseOut={handleMouseOut}
+                    >
+                        <Card currentIndexValue={currentIndexValue} />
+                    </div>
+                    <FaAngleRight 
+                        className="arrow-right" 
+                        onClick={nextProject}
+                        style={{display: currentPosition === slide.length-1 ? 'none' : ''}}
+                    />
                 </div>
-                <FaAngleRight 
-                    className="arrow-right" 
-                    onClick={nextProject}
-                    style={{display: currentPosition === slide.length-1 ? 'none' : ''}}
-                />
+                <ImageCircle />
             </div>
             
         </div>
