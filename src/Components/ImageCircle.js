@@ -5,7 +5,7 @@ const ImageCircle = ({circleClick, activeCircle})=> {
         // <div className="project-circle">
             <div className="circle" 
                 onClick={circleClick}
-                style={{backgroundColor: activeCircle ? '#FF6B00' : ''}}
+                style={{backgroundColor: activeCircle ? '#FF6B00' : '#747474'}}
             >
 
             </div>

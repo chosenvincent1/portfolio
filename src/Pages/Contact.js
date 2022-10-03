@@ -9,11 +9,14 @@ const Contact = ()=> {
         lastName: ''
     })
 
-    const [file, setFile] = useState([])
+    const [selectedfile, setSelectedFile] = useState('');
+    const [isFilePicked, setIsFilePicked] = useState(false);
 
-    const handleChange = ()=> {
-        
+    const handleFileChange = (event)=> {
+        setSelectedFile(event.target.files[0]);
+        setIsFilePicked(true);
     }
+    console.log(selectedfile.name)
 
     const handleSubmit = (e)=> {
         e.preventDefault();
@@ -55,7 +58,6 @@ const Contact = ()=> {
                             type="text" 
                             className="first-name" 
                             placeholder='First Name'
-                            onChange={handleChange}
                         />
                         <input 
                             type="text" 
@@ -73,13 +75,19 @@ const Contact = ()=> {
                     <p className='second-p-tag'>Little description about your project</p>
                     <textarea />
                     <label className='add-file' htmlFor='attachment-input'>
-                        <FaPaperclip />
-                        <p className='attachment-text'>Add attachment</p>
+                        { 
+                            isFilePicked ? 
+                            <p className='selected-file'>{selectedfile.name}</p> :  
+                            <p className='attachment-text'>Add attachment</p>
+                        }
                         <input 
-                            type="file" 
+                            type="file"
+                            // name='file'
                             className='attachment-input' 
                             id='attachment-input'
+                            onChange={handleFileChange}
                         />
+                        
                     </label>                      
                     <button className='send-btn'>Send</button>
                 </form>
