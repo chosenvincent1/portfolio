@@ -362,11 +362,11 @@ body {
   align-items: center;
   margin-top: 20px;
 }
-.project-circle > .circle {
+.circle {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: #FF6B00;
+  background-color:#747474 ;
   margin-right: 5px;
 }
 

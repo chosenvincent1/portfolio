@@ -7,9 +7,9 @@ import Data from "../Projects/Data";
 
 const Project = ()=> {
     const [hover, setHover] = useState(false);
-
     const [slide, setSlide] = useState(Data);
     const [currentPosition, setCurrentPositon] = useState(0)
+    const [activeCircle, setActiveCircle] = useState(false)
 
     let currentIndexValue = slide[currentPosition];
 
@@ -34,6 +34,11 @@ const Project = ()=> {
         currentIndexValue = slide[currentPosition];
     }
     
+    const circleClick = ()=> {
+        // currentIndexValue = slide[currentPosition];
+        console.log('hello');
+        setActiveCircle(prevActiveCircle => !prevActiveCircle)
+    }
 
     // const projects = Data.map((project, index) => {
     //     return <Card key={index} {...project} />
@@ -81,7 +86,16 @@ const Project = ()=> {
                         style={{display: currentPosition === slide.length-1 ? 'none' : ''}}
                     />
                 </div>
-                <ImageCircle />
+                <div className="project-circle">
+                    {Data.map((item, index)=> {
+                        return <ImageCircle 
+                                    key={index} 
+                                    circleClick={circleClick}
+                                    activeCircle={activeCircle}
+                                />
+                    })}
+                </div>
+                
             </div>
             
         </div>
