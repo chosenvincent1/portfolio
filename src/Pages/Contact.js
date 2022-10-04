@@ -4,31 +4,28 @@ import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaTwitter, FaPaperclip }
 
 
 const Contact = ()=> {
+
+    const [isFilePicked, setIsFilePicked] = useState(false);
+
     const [data, setData] = useState({
         firstName: '',
         lastName: '',
         email: '',
         description: '',
-        file: ''
+        file: []
     });
 
-    const [selectedfile, setSelectedFile] = useState('');
-    const [isFilePicked, setIsFilePicked] = useState(false);
-
-    const handleFileChange = (event)=> {
-        setSelectedFile(event.target.files[0]);
-        setIsFilePicked(true);
-    }
 
     const handleDataChange = (event)=> {
+        const {name, value, type, files} = event.target
         setData(prevData => {
             return {
                 ...prevData,
-                [event.target.name]: event.target.value
+                [name]: type === 'file' ? [...data.file, files[0]] : value
             }
         })
+        setIsFilePicked(true);
     }
-    console.log(data)
 
     const handleSubmit = (e)=> {
         e.preventDefault();
@@ -100,20 +97,21 @@ const Contact = ()=> {
                         onChange={handleDataChange}
                     />
                     <label className='add-file' htmlFor='attachment-input'>
-                        {/* <FaPaperclip /> */}
-                        { 
-                            isFilePicked ? 
-                            <p className='selected-file'>{selectedfile.name}</p> :  
-                            <p className='attachment-text'>Add File</p>
-                        }
+                        <FaPaperclip />
+                        <p className='attachment-text'>Add Files</p>
+                        
                         <input 
                             type="file"
                             name='file'
                             className='attachment-input' 
                             id='attachment-input'
-                            onChange={handleFileChange}
-                        />
-                        
+                            onChange={handleDataChange}
+                            value=''
+                        /> 
+                        { isFilePicked ?
+                            <p className='selected-file'>{`${data.file.length} selected`}</p>
+                            : ''
+                        }
                     </label>                      
                     <button className='send-btn'>Send</button>
                 </form>
