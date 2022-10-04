@@ -22,8 +22,6 @@ const Project = ()=> {
         currentIndexValue = slide[currentPosition];
     }
 
-    console.log(slide.length-1)
-
     const prevProject = ()=> {
         if (currentPosition !== 0) {
             setCurrentPositon(currentPosition - 1)  
@@ -36,7 +34,6 @@ const Project = ()=> {
     
     const circleClick = ()=> {
         // currentIndexValue = slide[currentPosition];
-        console.log('hello');
         setActiveCircle(prevActiveCircle => !prevActiveCircle)
     }
 
