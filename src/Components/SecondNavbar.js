@@ -23,7 +23,7 @@ const SecondNavbar = ()=> {
             <div className="logo">
             <p>chosen</p>
             </div>
-            <ul>
+            {/* <ul>
                 <li className='home-navbar' >
                     <Link
                         className={splitLocation[1] === '' ? 'active' : ''}
@@ -38,13 +38,6 @@ const SecondNavbar = ()=> {
                         >projects
                     </Link>
                 </li>
-                {/* <li className="about-navbar">
-                    <Link
-                        className={splitLocation[1] === 'about' ? 'active' : ''}
-                        to='/about'
-                        >about
-                    </Link>
-                </li> */}
                 <li className="contact-navbar">
                     <Link
                         className={splitLocation[1] === 'contact' ? 'active' : ''}
@@ -52,8 +45,8 @@ const SecondNavbar = ()=> {
                         >contact
                     </Link>
                 </li>
-            </ul>
-            {/* <button className="download-cv">Download CV</button> */}
+            </ul> */}
+            <button className="download-cv">Download CV</button>
             {/* <div className="hamburger-container" onClick={clickHamburger} >
                 <FaBars id="menu" className= { `menu ${hamburger ? "remove-hamburger " : "hamburger "}`} />
                 <FaTimes id="menu" className={`menu ${hamburger ? "cancel" : "remove-cancel"}`} />

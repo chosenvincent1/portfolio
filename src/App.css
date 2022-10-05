@@ -142,6 +142,7 @@ body {
 .first-home-section {
   display: flex;
   position: relative;
+  justify-content: stretch;
   height: 100%;
   width: 100%;
 }
@@ -151,9 +152,6 @@ body {
   width: 100%;
   height: 100%;
   padding-left: 50px;
-  /* display: flex;
-  flex-direction: column; */
-  /* justify-content: center; */
 }
 
 .first-home-section > .home-text > .second-navbar {
@@ -254,7 +252,7 @@ body {
 .first-home-section > .home-image {
   position: relative;
   background-color: #C3C0C0;
-  max-width: 700px;
+  width: 700px;
 }
 
 .first-home-section > .home-image > .home-image-btn {
@@ -277,69 +275,14 @@ body {
 }
 
 .home-image > .developer {
-  height: 80%;
-  margin-top: 0;
-  margin-left: 100px;
+  height: 100%;
+  /* top: 10px; */
+  /* margin-left: 100px; */
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
-.home-image > .html {
-  height: 50px;
-  transform: translate(130px, 50px);
-}
-
-.home-image > .css {
-  height: 50px;
-  transform: translate(20px, 200px);
-}
-
-.home-image > .javascript {
-  height: 50px;
-  transform: translate(230px, 100px);
-}
-
-.home-image > .react {
-  height: 30px;
-  transform: translate(50px, 170px);
-
-}
-.home-image > .node {
-  height: 40px;
-  transform: translate(-50px, 400px);
-}
-.home-image > .mongodb {
-  height: 50px;
-  transform: translate(40px, 150px);
-}
-
-.second-home-section > .blog-btn {
-  background-color: white;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 50px;
-  width: 200px;
-  padding: 10px 20px;
-  /* margin-right: 50px; */
-}
-.second-home-section > .blog-btn > p {
-  font-weight: 600;
-  font-size: 18px;
-  text-transform: capitalize;
-}
-
-.blog-btn > .btn-arrow {
-  background-color: black;
-  border: none;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  padding: 5px 15px;
-  cursor:  pointer;
-}
-.blog-btn > .btn-arrow > img {
-  height: 15px;
-}
 
 
 /* PROJECTS */

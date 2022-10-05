@@ -3,6 +3,7 @@ import Navbar from "../Components/Navbar";
 import Contact from "./Contact";
 import Home from "./Home";
 import Project from "./Project";
+import { Route, Routes } from 'react-router-dom';
 
 const AllPages = ()=> {
     return (
@@ -11,6 +12,11 @@ const AllPages = ()=> {
           <Home />
           <Project />
           <Contact /> 
+        {/* <Routes>
+          <Route path='/' element={ <Home /> } />
+          <Route path='/project' element={ <Project /> } />
+          <Route path='/contact' element={ <Contact /> } />
+      </Routes> */}
         </div>
     )
 }
