@@ -52,7 +52,6 @@ const Project = ()=> {
 
     return (
         <div className="project">
-            {/* <Navbar /> */}
             <div className="about">
                 <h1>about me</h1>
                 <p>I’m a Web Developer and Technical Write. I build amazing UI using HTML, CSS, JavaScript, React and NodeJs.</p>
