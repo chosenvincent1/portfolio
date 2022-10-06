@@ -51,7 +51,7 @@ body {
   padding: 30px;
   position: fixed;
   bottom: 10px;
-  border-radius: 10px;
+  border-radius: 30px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 10;
@@ -267,26 +267,25 @@ body {
 
 .project > .about {
   text-align: center;
-  padding-top: 10px;
-  margin-bottom: 30px;
+  padding: 10px 10px 0px 10px;
+  margin-bottom: 50px;
 }  
 
 .project > .about > h1 {
   color:#FF6B00;
   text-transform: capitalize;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
 }
 
 .project > .about > p {
   font-size: 1.2rem;
   color: gray;
-
 }
 
 .project > h1 {
   text-align: center;
   color:#FF6B00;
-  font-size: 2rem;
+  font-size: 2.3rem;
 }
 
 .project > .project-container > .project-arrow-container {
@@ -682,6 +681,7 @@ body {
   }
   
   .first-home-section > .project-completed {
+    display: none;
     position: absolute;
     top: 60%;
     left: 50%;
@@ -706,6 +706,46 @@ body {
     font-weight: 900;
   } */
   
+  /* PROJECT PAGE */
+  .project {
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .project > .about {
+    text-align: center;
+    padding: 10px 10px 0px 10px;
+    margin-bottom: 50px;
+  }  
+  
+  .project > .about > h1 {
+    font-size: 2rem;
+  }
+  
+  .project > .about > p {
+    font-size: 1.2rem;
+  }
+  
+  .project > h1 {
+    font-size: 2rem;
+  }
+
+  .project-image {
+    background-color: red;
+    width: 400px;
+    height: 265px;
+  }
+
+  .project-circle {
+    margin: 20px 0px;
+  }
+
+  .circle {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+  }
 
 
 
@@ -926,7 +966,7 @@ body {
   .project {
     background-color: black;
     width: 100%;
-    height:fit-content;
+    height: 100vh;
   }
 
   .project > .about {
@@ -982,7 +1022,7 @@ body {
     .contact {
       background-color: #C3C0C0;
       width: 100%;
-      height: fit-content;
+      height: 100vh;
     }
 
     .first-contact-section {
@@ -1034,7 +1074,7 @@ body {
     }
     
     .contact-form > textarea {
-      height: 100px;
+      height: 150px;
       font-size: 16px;
       padding: 10px;
     }
