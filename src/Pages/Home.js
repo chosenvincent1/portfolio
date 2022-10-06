@@ -9,8 +9,9 @@ const Home = ()=> {
     return (
         <div className="home">
             <section className="first-home-section">
+            <SecondNavbar className='second-navbar' />
                 <div className="home-text">
-                    <SecondNavbar className='second-navbar' />
+                    {/* <SecondNavbar className='second-navbar' /> */}
                     <p className="first-p">hi!</p>
                     <p className="second-p">i'm chosen,</p>
                     {/* <p className="third-p">web developer</p> */}
