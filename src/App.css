@@ -369,37 +369,12 @@ body {
   justify-content: center;
 }
 
-.contact-text > .first-circle {
-  background: linear-gradient(230.57deg, #F15701 38.97%, #FEC705 75.93%);
-  position: sticky;
-  top: 100px;
-  left: 100px;
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-}
-.contact-text > .second-circle {
-  background: linear-gradient(230.57deg, #F15701 38.97%, #FEC705 75.93%);
-  position: sticky;
-  top: 570px;
-  left: 400px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-}
-
 .contact-text > .text-1 {
-  font-size: 3rem;
-  margin-bottom: 30px;
-  color: black;
-  line-height: 50px;
-}
-.contact-text > .text-2 {
   font-size: 2.9rem;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   color: #FF6B00;
 }
-.contact-text > .text-3 {
+.contact-text > .text-2 {
   font-size: 1.2rem;
   color: black;
 }
@@ -407,6 +382,7 @@ body {
 .contact-text > .social-media {
   display: flex;
 }
+
 .contact-text > .social-media > a > .social-icon {
   font-size: 30px;
   color: black;
@@ -511,6 +487,10 @@ body {
   width: 100px;
 }
 
+
+
+
+
 @media only screen and (max-width: 1500px) {
   .project > .project-container > .project-arrow-container > .arrow-left {
     position: absolute;
@@ -526,6 +506,10 @@ body {
     transform: translateY(-50%);
   }
 }
+
+
+
+
 
 @media only screen and (max-width: 1200px) {
   .project > .project-container > .project-arrow-container > .arrow-left {
@@ -543,6 +527,10 @@ body {
   }
 }
 
+
+
+
+
 @media only screen and (max-width: 1000px) {
   .project > .project-container > .project-arrow-container > .arrow-left {
     position: absolute;
@@ -558,6 +546,10 @@ body {
     transform: translateY(-50%);
   }
 }
+
+
+
+
 
 @media only screen and (max-width: 992px) {
   .project > .project-container > .project-arrow-container > .arrow-left {
@@ -575,6 +567,10 @@ body {
   }
 }
 
+
+
+
+
 @media only screen and (max-width: 900px) {
   .project > .project-container > .project-arrow-container > .arrow-left {
     position: absolute;
@@ -590,6 +586,9 @@ body {
     transform: translateY(-50%);
   }
 }
+
+
+
 
 @media only screen and (max-width: 768px) {
 
@@ -609,33 +608,32 @@ body {
     transform: translateY(-50%);
   }
   
- 
 
   /* CONTACT PAGE */
+  .contact {
+    background-color: #C3C0C0;
+    width: 100%;
+    height: fit-content;
+  }
+
   .first-contact-section {
     display: flex;
     flex-direction: column;
-    padding: 70px 50px 10px 50px;
+    padding: 0px 20px;
   }
 
   .contact-text {
     width: auto;
-    margin-bottom: 50px;
-  }
-  
-  .contact-text > .text-1, .contact-text > .text-2 {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 
   .contact-text > .text-1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    margin-bottom: 0px;
+    text-align: center;
   }
 
   .contact-text > .text-2 {
-    font-size: 1.5rem;
-  }
-
-  .contact-text > .text-3 {
     display: none;
   }
 
@@ -648,6 +646,7 @@ body {
     flex-direction: column;
     width: 100%;
     margin-right: 20px;
+    margin-bottom: 20px;
   }
 
   .mobile-contact-text > .text-3 {
@@ -668,7 +667,10 @@ body {
 }
 
 
+
+
 /* MOBILE VIEW */
+
 @media only screen and (max-width: 600px){
 
   /* PROJECT PAGE */
@@ -724,7 +726,7 @@ body {
     top: 50%;
     transform: translateY(-50%);
   }
-  
+
 
     /* CONTACT PAGE */
 
@@ -733,4 +735,75 @@ body {
       width: 100%;
       height: fit-content;
     }
+
+    .first-contact-section {
+      display: flex;
+      flex-direction: column;
+      padding: 0px 20px;
+    }
+  
+    .contact-text {
+      width: auto;
+      margin-bottom: 20px;
+    }
+  
+    .contact-text > .text-1 {
+      font-size: 1.5rem;
+      margin-bottom: 0px;
+    }
+  
+    .contact-text > .text-2 {
+      display: none;
+    }
+  
+    .contact-text > .social-media {
+      display: none;
+    }
+    
+    .contact-form > .first-last-name {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    
+    .contact-form > .first-p-tag {
+      font-size: 1.2rem;
+    }
+
+    .contact-form > .first-last-name > input {
+      font-size: 16px;
+    }
+    
+    .contact-form > .email {
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+
+    .contact-form > .second-p-tag {
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+    }
+    
+    .contact-form > textarea {
+      height: 100px;
+      font-size: 16px;
+      padding: 10px;
+    }
+    
+    
+    .contact-form > .add-file > .attachment-text {
+      margin-right: 10px;
+      font-size: 1rem;
+    }
+
+    .contact-form > .add-file > .selected-file {
+      font-size: 1rem;
+    }
+    
+    .contact-form > .send-btn {
+      padding: 5px;
+      font-size: 18px;
+      width: 80px;
+    }
+    
 }
