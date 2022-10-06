@@ -46,7 +46,7 @@ const SecondNavbar = ()=> {
                     </Link>
                 </li>
             </ul> */}
-            <button className="download-cv">Download CV</button>
+            <button className="hire-me">Hire Me</button>
             {/* <div className="hamburger-container" onClick={clickHamburger} >
                 <FaBars id="menu" className= { `menu ${hamburger ? "remove-hamburger " : "hamburger "}`} />
                 <FaTimes id="menu" className={`menu ${hamburger ? "cancel" : "remove-cancel"}`} />
