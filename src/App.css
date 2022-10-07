@@ -358,18 +358,18 @@ body {
 }
 
 .contact-text {
-  position: relative;
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  padding-top: 150px;
+
 }
 
 .contact-text > .text-1 {
   font-size: 2.9rem;
-  /* margin-bottom: 30px; */
   color: #FF6B00;
 }
+
 .contact-text > .text-2 {
   font-size: 1.2rem;
   color: black;
@@ -421,9 +421,11 @@ body {
   width: 100%;
   font-size: 18px;
 }
+
 .contact-form > .first-last-name > input:focus {
   outline: none;
 }
+
 .contact-form > .first-last-name > .first-name {
   margin-right: 20px;
 }
@@ -433,6 +435,7 @@ body {
   margin-bottom: 20px;
   font-size: 18px;
 }
+
 .contact-form > .email:focus{
   outline: none;
 }
@@ -545,28 +548,6 @@ body {
 
 
 
-
-
-@media only screen and (max-width: 992px) {
-  .project > .project-container > .project-arrow-container > .arrow-left {
-    position: absolute;
-    left: 130px;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  
-  .project > .project-container > .project-arrow-container > .arrow-right {
-    position: absolute;
-    right: 130px;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-}
-
-
-
-
-
 @media only screen and (max-width: 992px) {
 
   .navbar {
@@ -618,7 +599,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
+    position: relative;
   }
   
   .first-home-section > .home-text > .first-p, .first-home-section > .home-text > .second-p {
@@ -643,33 +624,21 @@ body {
   }
   
   .first-home-section > .home-text > .download-cv {
-    display: none;
-    padding: 10px 30px;
-    background-color: #FF6B00;
-    color: white;
-    cursor: pointer;
-    border: none;
-    font-size: 18px;
-    font-weight: 600;
-    border-radius: 10px;
-    text-transform: capitalize;
+    padding: 10px; 
+    font-size: 16px;
     margin-bottom: 0px;
-    width: 200px;
+    width: 150px;
+    position: absolute;
+    top: 60%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
   }
   
   .first-home-section > .home-text > .home-social-media {
     display: none;
   }
-  
-  /* .first-home-section > .home-text > .home-social-media > a {
-    text-decoration: none;
-  }
-  
-  .first-home-section > .home-text > .home-social-media > a > .social-icon {
-    font-size: 30px;
-    color: white;
-    margin-right: 20px;
-  } */
+
   
   .first-home-section > .home-text > .developer {
     position: absolute;
@@ -691,20 +660,7 @@ body {
     height: 90px;
     z-index: 10;
   }
-  
-  /* .first-home-section > .project-completed > p {
-    margin: 2px 0px;
-  }
-  
-  .first-home-section > .project-completed > p > .plus, .first-home-section > .project-completed > p > .percent {
-    color: rgb(7, 232, 7);
-    font-weight: 900;
-  }
-  
-  .first-home-section > .project-completed > p > .completed {
-    color: rgb(249, 11, 51);
-    font-weight: 900;
-  } */
+ 
   
   /* PROJECT PAGE */
   .project {
@@ -734,7 +690,7 @@ body {
   .project-image {
     background-color: red;
     width: 400px;
-    height: 265px;
+    height: 255px;
   }
 
   .project-circle {
@@ -761,6 +717,15 @@ body {
     right: 70px;
     top: 50%;
     transform: translateY(-50%);
+  }
+
+
+  /* CONTACT PAGE */
+  .contact-text {
+    width: auto;
+    margin-bottom: 20px;
+    margin-top: 0;
+    padding: 0;
   }
 }
 
@@ -805,7 +770,7 @@ body {
   }
 
   .contact-text > .text-1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: 0px;
     text-align: center;
   }
@@ -851,7 +816,6 @@ body {
 @media only screen and (max-width: 600px){
 
   /* NAVBAR */
-
   .navbar {
     width: 200px;
     height: 30px;
@@ -880,8 +844,8 @@ body {
     font-weight: 500;
   }
 
-  /* HOME PAGE */
 
+  /* HOME PAGE */
   .home {
     width: 100%;
     height: 100vh;
@@ -897,11 +861,9 @@ body {
   .first-home-section > .home-text {
     width: 100%;
     height: 100%;
-    /* padding: 0px 20px; */
     position: relative;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
   }
   
@@ -931,23 +893,12 @@ body {
     margin-bottom: 30px;
     text-align: center;
   }
-  
-  .first-home-section > .home-text > .download-cv {
-    padding: 10px 5px;
-    font-size: 16px;
-    font-weight: 600;
-    margin-bottom: 0px;
-    width: 170px;
-  }
+ 
   
   .first-home-section > .home-text > .home-social-media {
     display: none;
   }
-  /* .first-home-section > .home-text > .home-social-media > a > .social-icon {
-    font-size: 20px;
-    color: white;
-    margin-right: 20px;
-  } */
+ 
   
   .first-home-section > .home-text > .developer {
     position: absolute;
@@ -1003,17 +954,12 @@ body {
   }
 
   .project > .project-container > .project-arrow-container > .arrow-left {
-    position: absolute;
-    left: 30px;
-    top: 50%;
-    transform: translateY(-50%);
+    display: none;
+
   }
   
   .project > .project-container > .project-arrow-container > .arrow-right {
-    position: absolute;
-    right: 30px;
-    top: 50%;
-    transform: translateY(-50%);
+    display: none;
   }
 
 

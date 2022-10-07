@@ -36,7 +36,7 @@ const Contact = ()=> {
         
             <section className='first-contact-section'>
                 <div className='contact-text'>
-                    <p className='text-1'>Need a project? <br /> Send Request</p>
+                    <p className='text-1'>Need a project? Send Request</p>
                     <p className='text-2'>You can also contact me on</p>
                     <div className='social-media'>
                         <a href='https://www.twitter.com/chosenvincent1'>
