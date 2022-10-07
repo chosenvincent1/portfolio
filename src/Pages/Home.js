@@ -2,9 +2,14 @@
 import React from "react";
 import Navbar from "../Components/Navbar";
 import SecondNavbar from "../Components/SecondNavbar";
-import Project from "./Project";
 import { motion } from "framer-motion";
-import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { 
+    FaFacebook, 
+    FaGithub, 
+    FaInstagram, 
+    FaLinkedin, 
+    FaTwitter 
+} from 'react-icons/fa';
 
 const Home = ()=> {
     return (
