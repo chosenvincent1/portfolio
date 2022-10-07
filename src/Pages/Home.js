@@ -3,6 +3,7 @@ import React from "react";
 import Navbar from "../Components/Navbar";
 import SecondNavbar from "../Components/SecondNavbar";
 import Project from "./Project";
+import { motion } from "framer-motion";
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 const Home = ()=> {
@@ -15,7 +16,14 @@ const Home = ()=> {
                     <p className="second-p">i'm chosen,</p>
                     <p className="fourth-p">“I’m a Web Developer with a solid background in JavaScript and React. <br /> i'm also a MERN Stack Developer”</p>
                    
-                    <button className="download-cv">Download CV</button>
+                    <motion.button 
+                        className="download-cv"
+                        initial={{ y: '-100vh' }}
+                        animate={{ y: 0 }}
+                        transition={{delay: 2}}
+                    >
+                        Download CV
+                    </motion.button>
                     <div className='home-social-media'>
                         <a href='https://www.twitter.com/chosenvincent1'>
                             <FaTwitter className='social-icon' />

@@ -630,8 +630,7 @@ body {
     width: 150px;
     position: absolute;
     top: 60%;
-    left: 52%;
-    transform: translate(-50%, -50%);
+    left: 45%;
     z-index: 10;
   }
   
@@ -688,7 +687,6 @@ body {
   }
 
   .project-image {
-    background-color: red;
     width: 400px;
     height: 255px;
   }
@@ -736,7 +734,7 @@ body {
 
   /* PROJECT PAGE */
 
-  .project > .project-container > .project-arrow-container > .arrow-left {
+  /* .project > .project-container > .project-arrow-container > .arrow-left {
     position: absolute;
     left: 40px;
     top: 50%;
@@ -748,6 +746,15 @@ body {
     right: 40px;
     top: 50%;
     transform: translateY(-50%);
+  } */
+
+  .project > .project-container > .project-arrow-container > .arrow-left {
+    display: none;
+
+  }
+  
+  .project > .project-container > .project-arrow-container > .arrow-right {
+    display: none;
   }
   
 
@@ -897,6 +904,17 @@ body {
   
   .first-home-section > .home-text > .home-social-media {
     display: none;
+  }
+
+  .first-home-section > .home-text > .download-cv {
+    padding: 10px; 
+    font-size: 16px;
+    margin-bottom: 0px;
+    width: 150px;
+    position: absolute;
+    top: 65%;
+    left: 43%;
+    z-index: 10;
   }
  
   
