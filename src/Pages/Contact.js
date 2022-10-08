@@ -9,7 +9,6 @@ import {
 } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
-
 const contactVariants = {
     visibleSocialMedia: {
         scale: 1.2
@@ -27,7 +26,6 @@ const Contact = ()=> {
         description: '',
         file: []
     });
-
 
     const handleDataChange = (event)=> {
         const {name, value, type, files} = event.target

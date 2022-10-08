@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import Card from "../Components/Card";
-import Navbar from "../Components/Navbar";
 import ImageCircle from "../Components/ImageCircle";
 import Data from "../Projects/Data";
 
@@ -12,6 +11,8 @@ const Project = ()=> {
     const [activeCircle, setActiveCircle] = useState(false)
 
     let currentIndexValue = slide[currentPosition];
+    let projectName = Data[currentPosition].name
+    let projectDescription = Data[currentPosition].description
 
     const nextProject = ()=> {
         if (currentPosition !== slide.length - 1) {
@@ -33,17 +34,11 @@ const Project = ()=> {
     }
     
     const circleClick = ()=> {
-        // currentIndexValue = slide[currentPosition];
         setActiveCircle(prevActiveCircle => !prevActiveCircle)
     }
 
-    // const projects = Data.map((project, index) => {
-    //     return <Card key={index} {...project} />
-    // })
-
     const handleMouseOver = ()=> {
-        setHover(true)
-        
+        setHover(true)  
     }
     const handleMouseOut = ()=> {
         setHover(false)
@@ -69,9 +64,15 @@ const Project = ()=> {
                         className="text-1"
                         style={{display: hover ? 'block' : 'none'}}
                     >
-                        <span>Farm Website</span> <br />
-                        <span>Full-Stack Project</span> <br />
-                        <span className="small-text">Click to Visit Site</span>
+                        <span className="project-name">
+                            {projectName}
+                        </span> <br />
+                        <span className="project-description">
+                            ({projectDescription})
+                        </span> <br />
+                        <span className="small-text">
+                            Click to Visit Site
+                        </span>
                     </p>
                 
                     <div className="project-container" 
