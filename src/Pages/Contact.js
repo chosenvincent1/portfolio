@@ -1,7 +1,20 @@
 import React, { useState } from 'react';
-import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaTwitter, FaPaperclip } from 'react-icons/fa';
-// import Navbar from '../Components/Navbar';
+import { 
+    FaFacebook, 
+    FaGithub, 
+    FaInstagram, 
+    FaLinkedin, 
+    FaTwitter, 
+    FaPaperclip 
+} from 'react-icons/fa';
+import { motion } from 'framer-motion';
 
+
+const contactVariants = {
+    visibleSocialMedia: {
+        scale: 1.2
+    }
+}
 
 const Contact = ()=> {
 
@@ -39,21 +52,41 @@ const Contact = ()=> {
                     <p className='text-1'>Need a project? Send Request</p>
                     <p className='text-2'>You can also contact me on</p>
                     <div className='social-media'>
-                        <a href='https://www.twitter.com/chosenvincent1'>
+                        <motion.a 
+                            href='https://www.twitter.com/chosenvincent1'
+                            variants={contactVariants}
+                            whileHover='visibleSocialMedia'
+                        >
                             <FaTwitter className='social-icon' />
-                        </a>
-                        <a href='https://github.com/chosenvincent1'>
+                        </motion.a>
+                        <motion.a 
+                            href='https://github.com/chosenvincent1'
+                            variants={contactVariants}
+                            whileHover='visibleSocialMedia'
+                        >
                             <FaGithub className='social-icon' />
-                        </a>
-                        <a href='https://www.linkedin.com/in/chosenvincent1-674613217'>
+                        </motion.a>
+                        <motion.a 
+                            href='https://www.linkedin.com/in/chosenvincent1-674613217'
+                            variants={contactVariants}
+                            whileHover='visibleSocialMedia'
+                        >
                             <FaLinkedin className='social-icon' />
-                        </a>
-                        <a href='https://www.instagram.com/chosenvincent1'>
+                        </motion.a>
+                        <motion.a 
+                            href='https://www.instagram.com/chosenvincent1'
+                            variants={contactVariants}
+                            whileHover='visibleSocialMedia'
+                        >
                             <FaInstagram className='social-icon' />
-                        </a>
-                        <a href='https://www.facebook.com/vincent.chosen.1'>
+                        </motion.a>
+                        <motion.a 
+                            href='https://www.facebook.com/vincent.chosen.1'
+                            variants={contactVariants}
+                            whileHover='visibleSocialMedia'
+                        >
                             <FaFacebook className='social-icon' />
-                        </a>                        
+                        </motion.a>                        
                     </div>
                 </div>
                 <form className='contact-form' onSubmit={handleSubmit}>
@@ -105,8 +138,9 @@ const Contact = ()=> {
                             value=''
                         /> 
                         { isFilePicked ?
-                            <p className='selected-file'>{`${data.file.length} selected`}</p>
-                            : ''
+                            <p className='selected-file'>
+                                {`${data.file.length} selected`}
+                            </p> : ''
                         }
                     </label>                      
                     <button className='send-btn'>Send</button>
@@ -114,21 +148,41 @@ const Contact = ()=> {
                 <div className='mobile-contact-text'>
                     <p className='text-3'>You can also contact me on</p>
                     <div className='social-media'>
-                        <a href='https://www.twitter.com/chosenvincent1'>
+                        <motion.a 
+                            href='https://www.twitter.com/chosenvincent1'
+                            variants={contactVariants}
+                            whileHover='visibleSocialMedia'
+                        >
                             <FaTwitter className='social-icon' />
-                        </a>
-                        <a href='https://github.com/chosenvincent1'>
+                        </motion.a>
+                        <motion.a 
+                            href='https://github.com/chosenvincent1'
+                            variants={contactVariants}
+                            whileHover='visibleSocialMedia'
+                        >
                             <FaGithub className='social-icon' />
-                        </a>
-                        <a href='https://www.linkedin.com/in/chosenvincent1-674613217'>
+                        </motion.a>
+                        <motion.a 
+                            href='https://www.linkedin.com/in/chosenvincent1-674613217'
+                            variants={contactVariants}
+                            whileHover='visibleSocialMedia'
+                        >
                             <FaLinkedin className='social-icon' />
-                        </a>
-                        <a href='https://www.instagram.com/chosenvincent1'>
+                        </motion.a>
+                        <motion.a 
+                            href='https://www.instagram.com/chosenvincent1'
+                            variants={contactVariants}
+                            whileHover='visibleSocialMedia'
+                        >
                             <FaInstagram className='social-icon' />
-                        </a>
-                        <a href='https://www.facebook.com/vincent.chosen.1'>
+                        </motion.a>
+                        <motion.a 
+                            href='https://www.facebook.com/vincent.chosen.1'
+                            variants={contactVariants}
+                            whileHover='visibleSocialMedia'
+                        >
                             <FaFacebook className='social-icon' />
-                        </a>                        
+                        </motion.a>                        
                     </div>
                 </div>
             </section>

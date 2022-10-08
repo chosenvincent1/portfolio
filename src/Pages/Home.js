@@ -11,13 +11,16 @@ import {
     FaTwitter 
 } from 'react-icons/fa';
 
-const buttonVariants = {
-    visible: {
+const homeVariants = {
+    visibleButton: {
         scale: 1.1,
         transition: {
             duration: 0.5,
             yoyo: Infinity
         }
+    },
+    visibleSocialMedia: {
+        scale: 1.2
     }
 }
 
@@ -27,33 +30,60 @@ const Home = ()=> {
             <section className="first-home-section">
             <SecondNavbar className='second-navbar' />
                 <div className="home-text">
-                    <p className="first-p">hi!</p>
-                    <p className="second-p">i'm chosen,</p>
-                    <p className="fourth-p">“I’m a Web Developer with a solid background in JavaScript and React. <br /> i'm also a MERN Stack Developer”</p>
+                    <div className="home-dev-info">
+                        <p className="first-p">hi!</p>
+                        <p className="second-p">i'm chosen,</p>
+                        <p className="third-p"
+                        >
+                            “I’m a Web Developer with a solid background in JavaScript and React. 
+                            <br /> 
+                            i'm also a MERN Stack Developer”
+                        </p>
+                    </div>
                    
                     <motion.button 
                         className="download-cv"
-                        variants={buttonVariants}
-                        animate='visible'
+                        variants={homeVariants}
+                        animate='visibleButton'
                     >
                         Download<br /> Resume
                     </motion.button>
                     <div className='home-social-media'>
-                        <a href='https://www.twitter.com/chosenvincent1'>
+                        <motion.a 
+                            href='https://www.twitter.com/chosenvincent1'
+                            variants={homeVariants}
+                            whileHover='visibleSocialMedia'
+                        >
                             <FaTwitter className='social-icon' />
-                        </a>
-                        <a href='https://github.com/chosenvincent1'>
+                        </motion.a>
+                        <motion.a 
+                            href='https://github.com/chosenvincent1'
+                            variants={homeVariants}
+                            whileHover='visibleSocialMedia'
+                        >
                             <FaGithub className='social-icon' />
-                        </a>
-                        <a href='https://www.linkedin.com/in/chosenvincent1-674613217'>
+                        </motion.a>
+                        <motion.a 
+                            href='https://www.linkedin.com/in/chosenvincent1-674613217'
+                            variants={homeVariants}
+                            whileHover='visibleSocialMedia'
+                        >
                             <FaLinkedin className='social-icon' />
-                        </a>
-                        <a href='https://www.instagram.com/chosenvincent1'>
+                        </motion.a>
+                        <motion.a 
+                            href='https://www.instagram.com/chosenvincent1'
+                            variants={homeVariants}
+                            whileHover='visibleSocialMedia'
+                        >
                             <FaInstagram className='social-icon' />
-                        </a>
-                        <a href='https://www.facebook.com/vincent.chosen.1'>
+                        </motion.a>
+                        <motion.a 
+                            href='https://www.facebook.com/vincent.chosen.1'
+                            variants={homeVariants}
+                            whileHover='visibleSocialMedia'
+                        >
                             <FaFacebook className='social-icon' />
-                        </a>                        
+                        </motion.a>                        
                     </div>
 
                     <img src="/images/chosen.png" alt="" className="developer" />

@@ -68,7 +68,11 @@ const Project = ()=> {
                     <p 
                         className="text-1"
                         style={{display: hover ? 'block' : 'none'}}
-                        >Farm Website <br />Full-Stack Project <br /> <span className="small-text">Click to Visit Site</span></p>
+                    >
+                        <span>Farm Website</span> <br />
+                        <span>Full-Stack Project</span> <br />
+                        <span className="small-text">Click to Visit Site</span>
+                    </p>
                 
                     <div className="project-container" 
                         onMouseOver={handleMouseOver}

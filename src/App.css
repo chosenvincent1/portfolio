@@ -57,12 +57,12 @@ body {
   z-index: 10;
 }
 
-.navbar > .nav-icon {
+.navbar > .nav-icon-container > .nav-icon {
   font-size: 30px;
   cursor: pointer;
 }
 
-.navbar > .nav-icon:hover {
+.navbar > .nav-icon-container > .nav-icon:hover {
   color: #FF6B00;
 }
 
@@ -101,6 +101,7 @@ body {
 /* Home Page */
 
 .home {
+  background-color: black;
   width: 100%;
   height: 100vh;
   overflow-y: auto;
@@ -116,14 +117,15 @@ body {
 
 
 .first-home-section > .home-text {
-  background-color: black;
+  /* background-color: black; */
   width: 100%;
   height: 100%;
   padding: 0px 50px;
   position: relative;
 }
 
-.first-home-section > .home-text > .first-p, .first-home-section > .home-text > .second-p {
+.first-home-section > .home-text > .home-dev-info > .first-p, 
+.first-home-section > .home-text > .home-dev-info > .second-p {
   font-family: "tt1161m_", sans-serif;
   font-size: 70px;
   font-weight: 700;
@@ -131,24 +133,17 @@ body {
   text-transform: capitalize;
 }
 
-.first-home-section > .home-text > .first-p {
+.first-home-section > .home-text > .home-dev-info > .first-p {
   color: white;
   margin-top: 50px;
 }
 
-.first-home-section > .home-text > .second-p {
+.first-home-section > .home-text > .home-dev-info > .second-p {
   color: #FF6B00;
   margin-top: 10px;
 }
-.first-home-section > .home-text > .third-p {
-  font-family: "Humanist777CondensedBT", sans-serif;
-  color: white;
-  font-weight: 600;
-  font-size: 25px;
-  text-transform: capitalize;
-  margin-top: 5px;
-}
-.first-home-section > .home-text > .fourth-p {
+
+.first-home-section > .home-text > .home-dev-info > .third-p {
   font-size: 18px;
   color: #747474;
   margin-bottom: 20px;
@@ -165,7 +160,7 @@ body {
   border-radius: 10px;
   text-transform: capitalize;
   margin-bottom: 70px;
-  width: 150px;
+  width: 180px;
 }
 
 .first-home-section > .home-text > .home-social-media {
@@ -547,7 +542,7 @@ body {
     border-radius: 20px;
   }
   
-  .navbar > .nav-icon {
+  .navbar > .nav-icon-container > .nav-icon {
     font-size: 25px;
   }
   
@@ -584,7 +579,7 @@ body {
   }
   
   
-  .first-home-section > .home-text {
+  .first-home-section > .home-text > .home-dev-info {
     padding: 0px 20px;
     display: flex;
     flex-direction: column;
@@ -592,22 +587,23 @@ body {
     position: relative;
   }
   
-  .first-home-section > .home-text > .first-p, .first-home-section > .home-text > .second-p {
+  .first-home-section > .home-text > .home-dev-info > .first-p, 
+  .first-home-section > .home-text > .home-dev-info > .second-p {
     font-size: 50px;
     margin: 0;
   }
   
-  .first-home-section > .home-text > .first-p {
+  .first-home-section > .home-text > .home-dev-info > .first-p {
     color: white;
     margin-top: 0;
   }
   
-  .first-home-section > .home-text > .second-p {
+  .first-home-section > .home-text > .home-dev-info > .second-p {
     color: #FF6B00;
     margin-top: 0px;
   }
 
-  .first-home-section > .home-text > .fourth-p {
+  .first-home-section > .home-text > .home-dev-info > .third-p {
     font-size: 16px;
     margin-bottom: 20px;
     text-align: center;
@@ -619,8 +615,8 @@ body {
     margin-bottom: 0px;
     width: 150px;
     position: absolute;
-    top: 60%;
-    left: 45%;
+    top: 50%;
+    left: 40%;
     z-index: 10;
   }
   
@@ -851,9 +847,9 @@ body {
   }
   
   .second-navbar > .hire-me {
-    padding: 5px 10px;
+    padding: 8px 12px;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 700;
   }
 
 
@@ -870,7 +866,7 @@ body {
     width: 100%;
   }
   
-  .first-home-section > .home-text {
+  .first-home-section > .home-text > .home-dev-info {
     width: 100%;
     height: 100%;
     position: relative;
@@ -880,7 +876,8 @@ body {
   }
   
   
-  .first-home-section > .home-text > .first-p, .first-home-section > .home-text > .second-p {
+  .first-home-section > .home-text > .home-dev-info > .first-p, 
+  .first-home-section > .home-text > .home-dev-info > .second-p {
     font-family: "tt1161m_", sans-serif;
     font-size: 50px;
     font-weight: 700;
@@ -888,18 +885,18 @@ body {
     text-transform: capitalize;
   }
   
-  .first-home-section > .home-text > .first-p {
+  .first-home-section > .home-text > .home-dev-info > .first-p {
     color: white;
     margin-top: 5px;
   }
   
-  .first-home-section > .home-text > .second-p {
+  .first-home-section > .home-text > .home-dev-info > .second-p {
     color: #FF6B00;
     margin-top: 10px;
   }
 
   
-  .first-home-section > .home-text > .fourth-p {
+  .first-home-section > .home-text > .home-dev-info > .third-p {
     font-size: 16px;
     color: #747474;
     margin-bottom: 30px;
@@ -917,8 +914,8 @@ body {
     margin-bottom: 0px;
     width: 150px;
     position: absolute;
-    top: 65%;
-    left: 43%;
+    top: 50%;
+    left: 40%;
     z-index: 10;
   }
  

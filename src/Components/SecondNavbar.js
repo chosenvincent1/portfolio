@@ -29,7 +29,6 @@ const SecondNavbar = ()=> {
                 className="hire-me"
                 whileHover={{ 
                     scale: 1.1,
-                    boxShadow: '0px 0px 8px #C3C0C0'
                 }}
             >
                 Hire Me
