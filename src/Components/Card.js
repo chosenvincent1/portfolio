@@ -1,6 +1,7 @@
 import React from "react";
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const Grid = ({image, name, description, link, currentIndexValue})=> {
 
@@ -9,11 +10,13 @@ const Grid = ({image, name, description, link, currentIndexValue})=> {
     }
 
     return(
-        <div className="project-image" onClick={redirect}>
+        <motion.div 
+            className="project-image" 
+            onClick={redirect}
+            whileHover={{ scale: 1.1 }}
+        >
             <img src={currentIndexValue.image} />
-            {/* <p className="project-name">{name}</p>
-            <p className="project-description">{description}</p> */}
-        </div>
+        </motion.div>
     )
 }
 

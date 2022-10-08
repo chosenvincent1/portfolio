@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, useLocation } from 'react-router-dom';
+import { motion } from "framer-motion";
 import { FaBars, FaBriefcase, FaHome, FaPhoneSquare, FaTimes } from 'react-icons/fa';
 
 const SecondNavbar = ()=> {
@@ -23,30 +24,16 @@ const SecondNavbar = ()=> {
             <div className="logo">
             <p>chosen</p>
             </div>
-            {/* <ul>
-                <li className='home-navbar' >
-                    <Link
-                        className={splitLocation[1] === '' ? 'active' : ''}
-                        to='/'
-                        >home
-                    </Link>
-                </li>
-                <li className='projects-navbar' >
-                    <Link
-                        className={splitLocation[1] === 'project' ? 'active' : ''}
-                        to='/project'
-                        >projects
-                    </Link>
-                </li>
-                <li className="contact-navbar">
-                    <Link
-                        className={splitLocation[1] === 'contact' ? 'active' : ''}
-                        to='/contact'
-                        >contact
-                    </Link>
-                </li>
-            </ul> */}
-            <button className="hire-me">Hire Me</button>
+            
+            <motion.button 
+                className="hire-me"
+                whileHover={{ 
+                    scale: 1.1,
+                    boxShadow: '0px 0px 8px #C3C0C0'
+                }}
+            >
+                Hire Me
+            </motion.button>
             {/* <div className="hamburger-container" onClick={clickHamburger} >
                 <FaBars id="menu" className= { `menu ${hamburger ? "remove-hamburger " : "hamburger "}`} />
                 <FaTimes id="menu" className={`menu ${hamburger ? "cancel" : "remove-cancel"}`} />

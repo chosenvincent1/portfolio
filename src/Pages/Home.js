@@ -11,6 +11,16 @@ import {
     FaTwitter 
 } from 'react-icons/fa';
 
+const buttonVariants = {
+    visible: {
+        scale: 1.1,
+        transition: {
+            duration: 0.5,
+            yoyo: Infinity
+        }
+    }
+}
+
 const Home = ()=> {
     return (
         <div className="home">
@@ -23,11 +33,10 @@ const Home = ()=> {
                    
                     <motion.button 
                         className="download-cv"
-                        initial={{ y: '-100vh' }}
-                        animate={{ y: 0 }}
-                        transition={{delay: 2}}
+                        variants={buttonVariants}
+                        animate='visible'
                     >
-                        Download CV
+                        Download<br /> Resume
                     </motion.button>
                     <div className='home-social-media'>
                         <a href='https://www.twitter.com/chosenvincent1'>

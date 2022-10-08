@@ -155,7 +155,7 @@ body {
 }
 
 .first-home-section > .home-text > .download-cv {
-  padding: 10px 30px;
+  padding: 5px 10px;
   background-color: #FF6B00;
   color: white;
   cursor: pointer;
@@ -165,7 +165,7 @@ body {
   border-radius: 10px;
   text-transform: capitalize;
   margin-bottom: 70px;
-  width: 200px;
+  width: 150px;
 }
 
 .first-home-section > .home-text > .home-social-media {
