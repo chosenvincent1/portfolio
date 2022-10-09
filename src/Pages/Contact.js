@@ -144,7 +144,7 @@ const Contact = ()=> {
                     <button className='send-btn'>Send</button>
                 </form>
                 <div className='mobile-contact-text'>
-                    <p className='text-3'>You can also contact me on</p>
+                    {/* <p className='text-3'>You can also contact me on</p> */}
                     <div className='social-media'>
                         <motion.a 
                             href='https://www.twitter.com/chosenvincent1'

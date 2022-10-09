@@ -373,7 +373,6 @@ body {
 
 .contact-text > .text-2 {
   font-size: 1.2rem;
-  /* color: black; */
   color: white;
 }
 
@@ -383,15 +382,14 @@ body {
 
 .contact-text > .social-media > a > .social-icon {
   font-size: 30px;
-  /* color: black; */
   color: white;
   margin-right: 20px;
   cursor: pointer;
- }
+}
 
 .mobile-contact-text {
   display: none;
- }
+}
 
 .contact-form {
   background-color: black;
@@ -496,7 +494,6 @@ body {
 .contact-form > .send-btn:hover {
   background-color: #C3C0C0;
   color: black;
-  /* border: none; */
 }
 
 
@@ -769,7 +766,8 @@ body {
   /* CONTACT PAGE */
   .contact {
     width: 100%;
-    height: fit-content;
+    height: 100vh;
+    padding-top: 10px;
   }
 
   .first-contact-section {
@@ -785,8 +783,9 @@ body {
 
   .contact-text > .text-1 {
     font-size: 2rem;
-    margin-bottom: 0px;
+    margin: 0px;
     text-align: center;
+
   }
 
   .contact-text > .text-2 {
@@ -795,6 +794,16 @@ body {
 
   .contact-text > .social-media {
     display: none;
+  }
+
+  .contact-form {
+    background-color: black;
+    border: 2px solid #C3C0C0;
+    height: fit-content;
+    border-radius: 20px;
+    width: 100%;
+    padding: 10px 20px;
+    color: white;
   }
 
   .mobile-contact-text {
@@ -806,12 +815,14 @@ body {
   }
 
   .mobile-contact-text > .text-3 {
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     font-size: 1.2rem;
+    color: white;
   }
   
   .mobile-contact-text > .social-media {
     display: flex;
+    margin-top: 10px;
   }
 
   .mobile-contact-text > .social-media > a > .social-icon {
