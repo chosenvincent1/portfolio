@@ -39,27 +39,6 @@ const SecondNavbar = ()=> {
             >
                 Hire Me
             </motion.button>
-            {/* <div className="hamburger-container" onClick={clickHamburger} >
-                <FaBars id="menu" className= { `menu ${hamburger ? "remove-hamburger " : "hamburger "}`} />
-                <FaTimes id="menu" className={`menu ${hamburger ? "cancel" : "remove-cancel"}`} />
-            </div>
-
-            <div className="mobile-nav" style={{display: hamburger? 'block': 'none'}}>
-                <ul>
-                    <li className="home-navbar">
-                        <Link to='/'>home</Link>
-                    </li>
-                    <li className="projects-navbar">
-                        <Link to='/project'>projects</Link>
-                    </li>
-                    <li className="about-navbar">
-                        <Link to='/about'>about</Link>
-                    </li>
-                    <li className="contact-navbar">
-                        <Link to='/contact'>contact me</Link>
-                    </li>
-                </ul>
-            </div> */}
         </div>
     )
 }

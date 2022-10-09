@@ -87,7 +87,7 @@ const Home = ()=> {
                         </motion.a>                        
                     </div>
 
-                    <img src="/images/chosen.png" alt="" className="developer" />
+                    <img src="/images/chosen.png" alt="developer" className="developer" />
                 </div>
                 
 
