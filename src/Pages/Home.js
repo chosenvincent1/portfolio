@@ -39,15 +39,16 @@ const Home = ()=> {
                             <br /> 
                             i'm also a MERN Stack Developer”
                         </p>
+                        <motion.button 
+                            className="download-cv"
+                            variants={homeVariants}
+                            animate='visibleButton'
+                        >
+                            Download<br /> Resume
+                        </motion.button>
                     </div>
                    
-                    <motion.button 
-                        className="download-cv"
-                        variants={homeVariants}
-                        animate='visibleButton'
-                    >
-                        Download<br /> Resume
-                    </motion.button>
+                    
                     <div className='home-social-media'>
                         <motion.a 
                             href='https://www.twitter.com/chosenvincent1'

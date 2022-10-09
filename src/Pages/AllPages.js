@@ -8,15 +8,11 @@ import { Route, Routes } from 'react-router-dom';
 const AllPages = ()=> {
     return (
         <div className="all-pages">
-          <Navbar />
+          
           <Home />
           <Project />
           <Contact /> 
-        {/* <Routes>
-          <Route path='/' element={ <Home /> } />
-          <Route path='/project' element={ <Project /> } />
-          <Route path='/contact' element={ <Contact /> } />
-      </Routes> */}
+        
         </div>
     )
 }

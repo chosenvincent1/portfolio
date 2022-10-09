@@ -4,14 +4,20 @@ import About from './Pages/About';
 import Project from './Pages/Project';
 import Contact from './Pages/Contact';
 import './App.css';
-import AllPages from './Pages/AllPages';
+import Navbar from './Components/Navbar';
+import { Route, Routes } from 'react-router-dom';
 
 
 function App() {
 
   return (
-    <div>
-      <AllPages />
+    <div className='app'>
+      <Navbar />
+      <Routes>
+          <Route path='/' element={ <Home /> } />
+          <Route path='/project' element={ <Project /> } />
+          <Route path='/contact' element={ <Contact /> } />
+      </Routes>
     </div>
   );
 }

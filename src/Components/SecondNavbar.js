@@ -1,7 +1,13 @@
 import React, { useState } from "react";
 import { Link, useLocation } from 'react-router-dom';
 import { motion } from "framer-motion";
-import { FaBars, FaBriefcase, FaHome, FaPhoneSquare, FaTimes } from 'react-icons/fa';
+import { 
+    FaBars, 
+    FaBriefcase, 
+    FaHome, 
+    FaPhoneSquare, 
+    FaTimes 
+} from 'react-icons/fa';
 
 const SecondNavbar = ()=> {
 
