@@ -143,8 +143,8 @@ const Contact = ()=> {
                     </label>                      
                     <button className='send-btn'>Send</button>
                 </form>
-                <div className='mobile-contact-text'>
-                    {/* <p className='text-3'>You can also contact me on</p> */}
+                {/* <div className='mobile-contact-text'>
+                    <p className='text-3'>You can also contact me on</p>
                     <div className='social-media'>
                         <motion.a 
                             href='https://www.twitter.com/chosenvincent1'
@@ -182,7 +182,7 @@ const Contact = ()=> {
                             <FaFacebook className='social-icon' />
                         </motion.a>                        
                     </div>
-                </div>
+                </div> */}
             </section>
          </div>
     )
