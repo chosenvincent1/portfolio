@@ -876,17 +876,15 @@ body {
     width: 100%;
   }
 
-  /* .first-home-section > .home-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  } */
+  .first-home-section > .home-text {
+    width: 100%;
+    padding: 0;
+  }
   
   .first-home-section > .home-text > .home-dev-info {
     width: 100%;
     height: 100%;
-    position: relative;
+    /* position: relative; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -899,6 +897,8 @@ body {
     font-family: "tt1161m_", sans-serif;
     font-size: 50px;
     font-weight: 700;
+    width: 100%;
+    text-align: center;
     margin: 0;
     text-transform: capitalize;
   }
