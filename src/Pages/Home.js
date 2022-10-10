@@ -30,7 +30,6 @@ const Home = ()=> {
             <section className="first-home-section">
             <SecondNavbar className='second-navbar' />
                 <div className="home-text">
-                    <div className="home-dev-info">
                         <p className="first-p">hi!</p>
                         <p className="second-p">i'm chosen,</p>
                         <p className="third-p"
@@ -46,56 +45,38 @@ const Home = ()=> {
                         >
                             Download<br /> Resume
                         </motion.button>
-                    </div>
-                   
-                    
-                    <div className='home-social-media'>
-                        <motion.a 
-                            href='https://www.twitter.com/chosenvincent1'
-                            variants={homeVariants}
-                            whileHover='visibleSocialMedia'
-                        >
-                            <FaTwitter className='social-icon' />
-                        </motion.a>
-                        <motion.a 
-                            href='https://github.com/chosenvincent1'
-                            variants={homeVariants}
-                            whileHover='visibleSocialMedia'
-                        >
-                            <FaGithub className='social-icon' />
-                        </motion.a>
-                        <motion.a 
-                            href='https://www.linkedin.com/in/chosenvincent1-674613217'
-                            variants={homeVariants}
-                            whileHover='visibleSocialMedia'
-                        >
-                            <FaLinkedin className='social-icon' />
-                        </motion.a>
-                        <motion.a 
-                            href='https://www.instagram.com/chosenvincent1'
-                            variants={homeVariants}
-                            whileHover='visibleSocialMedia'
-                        >
-                            <FaInstagram className='social-icon' />
-                        </motion.a>
-                        <motion.a 
-                            href='https://www.facebook.com/vincent.chosen.1'
-                            variants={homeVariants}
-                            whileHover='visibleSocialMedia'
-                        >
-                            <FaFacebook className='social-icon' />
-                        </motion.a>                        
-                    </div>
 
-                    <img src="/images/chosen.png" alt="developer" className="developer" />
-                </div>
-                
-
-                {/* <div className="project-completed">
-                    <p>over 50 <span className="plus">+</span></p>
-                    <p>projects <span className="completed">completed</span></p>
-                    <p><span className="percent">100%</span> reliable</p>
-                </div> */}
+                        <div className='home-social-media'>
+                            <motion.a 
+                                href='https://www.twitter.com/chosenvincent1'
+                                variants={homeVariants}
+                                whileHover='visibleSocialMedia'
+                            >
+                                <FaTwitter className='social-icon' />
+                            </motion.a>
+                            <motion.a 
+                                href='https://github.com/chosenvincent1'
+                                variants={homeVariants}
+                                whileHover='visibleSocialMedia'
+                            >
+                                <FaGithub className='social-icon' />
+                            </motion.a>
+                            <motion.a 
+                                href='https://www.linkedin.com/in/chosenvincent1-674613217'
+                                variants={homeVariants}
+                                whileHover='visibleSocialMedia'
+                            >
+                                <FaLinkedin className='social-icon' />
+                            </motion.a>
+                            <motion.a 
+                                href='https://www.instagram.com/chosenvincent1'
+                                variants={homeVariants}
+                                whileHover='visibleSocialMedia'
+                            >
+                                <FaInstagram className='social-icon' />
+                            </motion.a>
+                        </div>
+                    </div>
             </section>
         </div>
     )

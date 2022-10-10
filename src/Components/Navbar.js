@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { FaBars, FaBriefcase, FaHome, FaPhone, FaTimes } from 'react-icons/fa';
 import { Link, useLocation } from 'react-router-dom';
+
 const Navbar = ()=> {
 
     const location = useLocation();

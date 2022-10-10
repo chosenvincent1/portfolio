@@ -77,13 +77,6 @@ const Contact = ()=> {
                             whileHover='visibleSocialMedia'
                         >
                             <FaInstagram className='social-icon' />
-                        </motion.a>
-                        <motion.a 
-                            href='https://www.facebook.com/vincent.chosen.1'
-                            variants={contactVariants}
-                            whileHover='visibleSocialMedia'
-                        >
-                            <FaFacebook className='social-icon' />
                         </motion.a>                        
                     </div>
                 </div>
@@ -143,46 +136,6 @@ const Contact = ()=> {
                     </label>                      
                     <button className='send-btn'>Send</button>
                 </form>
-                {/* <div className='mobile-contact-text'>
-                    <p className='text-3'>You can also contact me on</p>
-                    <div className='social-media'>
-                        <motion.a 
-                            href='https://www.twitter.com/chosenvincent1'
-                            variants={contactVariants}
-                            whileHover='visibleSocialMedia'
-                        >
-                            <FaTwitter className='social-icon' />
-                        </motion.a>
-                        <motion.a 
-                            href='https://github.com/chosenvincent1'
-                            variants={contactVariants}
-                            whileHover='visibleSocialMedia'
-                        >
-                            <FaGithub className='social-icon' />
-                        </motion.a>
-                        <motion.a 
-                            href='https://www.linkedin.com/in/chosenvincent1-674613217'
-                            variants={contactVariants}
-                            whileHover='visibleSocialMedia'
-                        >
-                            <FaLinkedin className='social-icon' />
-                        </motion.a>
-                        <motion.a 
-                            href='https://www.instagram.com/chosenvincent1'
-                            variants={contactVariants}
-                            whileHover='visibleSocialMedia'
-                        >
-                            <FaInstagram className='social-icon' />
-                        </motion.a>
-                        <motion.a 
-                            href='https://www.facebook.com/vincent.chosen.1'
-                            variants={contactVariants}
-                            whileHover='visibleSocialMedia'
-                        >
-                            <FaFacebook className='social-icon' />
-                        </motion.a>                        
-                    </div>
-                </div> */}
             </section>
          </div>
     )
