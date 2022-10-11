@@ -192,7 +192,7 @@ body {
   width: 500px;
   border-radius: 10px;
   height: 320px;
-  /* margin: 0px 10px; */
+  border: 2px solid white;
 }
 
 .project-image > img {
@@ -205,20 +205,8 @@ body {
   opacity: 0.2;
 }
 
-/* PROJECT CIRCLE */
-.project-circle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-}
-.circle {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #747474;
-  margin-right: 5px;
-}
+
+
 
 /* PROJECT PAGE */
 
@@ -252,36 +240,34 @@ body {
   font-size: 2.3rem;
 }
 
-.project > .project-container > .project-arrow-container {
+.project > .project-container {
   display: flex;
   justify-content: center;
-  align-items: center;
   position: relative;
-  background-color: red;
+  padding: 0px 20px;
 }
 
-.project > .project-container > .project-arrow-container > p {
+.project > .project-container > p {
   display: none;
   text-align: center;
   font-weight: 700;
   position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 50px;
   color: gray;
 }
-.project > .project-container > .project-arrow-container > p > .project-name {
+
+.project > .project-container > p > .project-name {
   font-size: 3rem;
 }
 
-.project > .project-container > .project-arrow-container > p > .project-description {
+.project > .project-container > p > .project-description {
   font-size: 2rem;
 }
 
-.project > .project-container > .project-arrow-container > p > .small-text {
+.project > .project-container > p > .small-text {
   font-size: 1rem;
-}
-
-.project > .project-container > .project-arrow-container > .project-container {
-  display: flex;
-  justify-content: center;
 }
 
 
@@ -292,7 +278,6 @@ body {
   background-color: black;
   width: 100%;
   height: 100vh;
-  /* overflow-y: auto; */
 }
 
 .first-contact-section {
@@ -300,7 +285,6 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 20px 50px 0px 50px;
-  height: 100%;
 }
 
 .contact-text {
@@ -308,7 +292,6 @@ body {
   display: flex;
   flex-direction: column;
   padding-top: 150px;
-
 }
 
 .contact-text > .text-1 {
@@ -448,13 +431,13 @@ body {
 
   .navbar {
     width: 250px;
-    height: 40px;
+    height: 50px;
     padding: 20px;
     border-radius: 20px;
   }
   
   .navbar > .nav-icon-container > a > .nav-icon {
-    font-size: 25px;
+    font-size: 30px;
   }
   
   .second-navbar {
@@ -562,16 +545,6 @@ body {
     height: 255px;
   }
 
-  .project-circle {
-    margin: 20px 0px;
-  }
-
-  .circle {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-  }
-
 
   /* CONTACT PAGE */
   .contact-text {
@@ -598,7 +571,6 @@ body {
     background-color: black;
     border: 2px solid #C3C0C0;
   }
-
 
   .contact-form > .send-btn {
     background-color: black;
@@ -641,14 +613,9 @@ body {
     font-size: 2rem;
     margin: 0px;
     text-align: center;
-
   }
 
   .contact-text > .text-2 {
-    display: none;
-  }
-
-  .contact-text > .social-media {
     display: none;
   }
 
@@ -656,30 +623,6 @@ body {
     padding: 10px 20px;
     margin-bottom: 10px;
   }
-
-  .mobile-contact-text {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-right: 20px;
-  }
-
-  .mobile-contact-text > .text-3 {
-    margin-bottom: 0px;
-    font-size: 1.2rem;
-    color: white;
-  }
-  
-  .mobile-contact-text > .social-media {
-    display: flex;
-  }
-
-  .mobile-contact-text > .social-media > a > .social-icon {
-    font-size: 30px;
-    color: white;
-    margin-right: 20px;
-    cursor: pointer;
-   }
 }
 
 
@@ -783,21 +726,7 @@ body {
     margin-bottom: 50px;
     width: 150px;
   }
- 
-  
-  .first-home-section > .home-text > .developer {
-    display: none;
-    position: absolute;
-    bottom: 0;
-    right: 50%;
-    transform: translateX(50%);
-    height: 70%;
-    margin-top: 50px;
-  }
-  
-  .first-home-section > .project-completed {
-    display: none;
-  }
+
 
   /* PROJECT PAGE */
   .project {
@@ -825,8 +754,8 @@ body {
   }
 
   .project-image {
-    width: 300px;
-    height: 190px;
+    width: 200;
+    height: 250px;
   }
 
   .project-circle {
@@ -839,14 +768,6 @@ body {
     border-radius: 50%;
   }
 
-  .project > .project-container > .project-arrow-container > .arrow-left {
-    display: none;
-
-  }
-  
-  .project > .project-container > .project-arrow-container > .arrow-right {
-    display: none;
-  }
 
 
     /* CONTACT PAGE */
@@ -854,14 +775,23 @@ body {
     .contact {
       width: 100%;
       height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
 
     .first-contact-section {
       display: flex;
       flex-direction: column;
       padding: 0px 20px;
+      /* background-color: red; */
     }
-  
+    /* .contact-text {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding-top: 150px;
+    } */
     .contact-text {
       width: auto;
       margin-bottom: 20px;

@@ -54,40 +54,28 @@ const Project = ()=> {
             </div>
             <h1>Projects</h1>
             <div className="project-container">
-                <div className="project-arrow-container">
-                    <FaAngleLeft 
-                        className="arrow-left" 
-                        onClick={prevProject}
-                        style={{display: currentPosition===0 ? 'none' : ''}}
-                    />
-                    <p 
-                        className="text-1"
-                        style={{display: hover ? 'block' : 'none'}}
-                    >
-                        <span className="project-name">
-                            {projectName}
-                        </span> <br />
-                        <span className="project-description">
-                            ({projectDescription})
-                        </span> <br />
-                        <span className="small-text">
-                            Click to Visit Site
-                        </span>
-                    </p>
+                <p 
+                    className="text-1"
+                    style={{display: hover ? 'block' : 'none'}}
+                >
+                    <span className="project-name">
+                        {projectName}
+                    </span> <br />
+                    <span className="project-description">
+                        ({projectDescription})
+                    </span> <br />
+                    <span className="small-text">
+                        Click to Visit Site
+                    </span>
+                </p>
                 
-                    <div className="project-container" 
-                        onMouseOver={handleMouseOver}
-                        onMouseOut={handleMouseOut}
-                    >
-                        <Card currentIndexValue={currentIndexValue} />
-                    </div>
-                    <FaAngleRight 
-                        className="arrow-right" 
-                        onClick={nextProject}
-                        style={{display: currentPosition === slide.length-1 ? 'none' : ''}}
-                    />
+                <div className="projects" 
+                    onMouseOver={handleMouseOver}
+                    onMouseOut={handleMouseOut}
+                >
+                    <Card currentIndexValue={currentIndexValue} />
                 </div>
-                <div className="project-circle">
+                {/* <div className="project-circle">
                     {Data.map((item, index)=> {
                         return <ImageCircle 
                                     key={index} 
@@ -95,7 +83,7 @@ const Project = ()=> {
                                     activeCircle={activeCircle}
                                 />
                     })}
-                </div>
+                </div> */}
                 
             </div>
             
