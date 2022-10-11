@@ -220,37 +220,41 @@ body {
   overflow-y: auto;
 }
 
-.project > .about {
+/* .project > .first-project-section {
+  width: 100%;
+} */
+
+.project > .first-project-section > .about {
   text-align: center;
   padding: 10px 10px 0px 10px;
   margin-bottom: 50px;
 }  
 
-.project > .about > h1 {
+.project > .first-project-section > .about > h1 {
   color:#FF6B00;
   text-transform: capitalize;
   font-size: 2.3rem;
 }
 
-.project > .about > p {
+.project > .first-project-section > .about > p {
   font-size: 1.2rem;
   color: gray;
 }
 
-.project > h1 {
+.project > .first-project-section > h1 {
   text-align: center;
   color:#FF6B00;
   font-size: 2.3rem;
 }
 
-.project > .project-container {
+.project > .first-project-section > .project-container {
   display: flex;
   justify-content: center;
   position: relative;
   padding: 0px 20px;
 }
 
-.project > .project-container > p {
+.project > .first-project-section > .project-container > p {
   display: none;
   text-align: center;
   font-weight: 700;
@@ -261,15 +265,15 @@ body {
   color: gray;
 }
 
-.project > .project-container > p > .project-name {
+.project > .first-project-section > .project-container > p > .project-name {
   font-size: 3rem;
 }
 
-.project > .project-container > p > .project-description {
+.project > .first-project-section > .project-container > p > .project-description {
   font-size: 2rem;
 }
 
-.project > .project-container > p > .small-text {
+.project > .first-project-section > .project-container > p > .small-text {
   font-size: 1rem;
 }
 
@@ -522,21 +526,21 @@ body {
     height: 100vh;
   }
 
-  .project > .about {
+  .project > .first-project-section > .about {
     text-align: center;
     padding: 10px 10px 0px 10px;
     margin-bottom: 50px;
   }  
   
-  .project > .about > h1 {
+  .project > .first-project-section > .about > h1 {
     font-size: 2rem;
   }
   
-  .project > .about > p {
+  .project > .first-project-section > .about > p {
     font-size: 1.2rem;
   }
   
-  .project > h1 {
+  .project > .first-project-section > h1 {
     font-size: 2rem;
   }
 
@@ -733,29 +737,29 @@ body {
     height: 100vh;
   }
 
-  .project > .about {
+  .project > .first-project-section > .about {
     text-align: center;
     padding: 10px 10px 0px 10px;
     margin-bottom: 100px;
   }  
   
-  .project > .about > h1 {
+  .project > .first-project-section > .about > h1 {
     font-size: 1.5rem;
   }
   
-  .project > .about > p {
+  .project > .first-project-section > .about > p {
     font-size: 1rem;
   }
   
-  .project > h1 {
+  .project > .first-project-section > h1 {
     font-size: 1.5rem;
   }
 
-  .project > .project-container {
+  .project > .first-project-section > .project-container {
     padding: 0px 30px;
   }
 
-  .project > .project-container > .projects {
+  .project > .first-project-section > .project-container > .projects {
     padding: 0px 20px;
   }
 

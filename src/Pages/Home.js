@@ -24,10 +24,21 @@ const homeVariants = {
     }
 }
 
+const containerVariants = {
+    exit: {
+        x: '-100vw',
+        transition: {ease: 'easeInOut'}
+    }
+}
+
 const Home = ()=> {
     return (
         <div className="home">
-            <section className="first-home-section">
+            <motion.section 
+                className="first-home-section"
+                variants={containerVariants}
+                exit='exit'
+            >
             <SecondNavbar className='second-navbar' />
                 <div className="home-text">
                         <p className="first-p">hello!</p>
@@ -84,7 +95,7 @@ const Home = ()=> {
                             </motion.a>
                         </div>
                     </div>
-            </section>
+            </motion.section>
         </div>
     )
 }

@@ -10,6 +10,7 @@ const Grid = ({image, name, description, link, currentIndexValue})=> {
     }
 
     console.log(currentIndexValue.image)
+    
 
     return(
         <motion.div 

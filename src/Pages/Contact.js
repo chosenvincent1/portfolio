@@ -15,6 +15,13 @@ const contactVariants = {
     }
 }
 
+const containerVariants = {
+    exit: {
+        x: '-100vw',
+        transition: {ease: 'easeInOut'}
+    }
+}
+
 const Contact = ()=> {
 
     const [isFilePicked, setIsFilePicked] = useState(false);
@@ -44,7 +51,11 @@ const Contact = ()=> {
 
     return(
          <div className='contact'>
-            <section className='first-contact-section'>
+            <motion.section 
+                className='first-contact-section'
+                variants={containerVariants}
+                exit='exit'
+            >
                 <div className='contact-text'>
                     <p className='text-1'>Need a project? Send Request</p>
                     <p className='text-2'>You can also contact me on</p>
@@ -135,7 +146,7 @@ const Contact = ()=> {
                     </label>                      
                     <button className='send-btn'>Send</button>
                 </form>
-            </section>
+            </motion.section>
          </div>
     )
 }
