@@ -30,7 +30,7 @@ const Home = ()=> {
             <section className="first-home-section">
             <SecondNavbar className='second-navbar' />
                 <div className="home-text">
-                        <p className="first-p">hi!</p>
+                        <p className="first-p">hello!</p>
                         <p className="second-p">i'm chosen,</p>
                         <p className="third-p"
                         >
@@ -74,6 +74,13 @@ const Home = ()=> {
                                 whileHover='visibleSocialMedia'
                             >
                                 <FaInstagram className='social-icon' />
+                            </motion.a>
+                            <motion.a 
+                                href='https://www.instagram.com/chosenvincent1'
+                                variants={homeVariants}
+                                whileHover='visibleSocialMedia'
+                            >
+                                <FaFacebook className='social-icon' />
                             </motion.a>
                         </div>
                     </div>

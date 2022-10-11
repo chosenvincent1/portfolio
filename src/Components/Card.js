@@ -9,6 +9,8 @@ const Grid = ({image, name, description, link, currentIndexValue})=> {
         window.location.replace(link)
     }
 
+    console.log(currentIndexValue.image)
+
     return(
         <motion.div 
             className="project-image" 

@@ -9,7 +9,8 @@ const Navbar = ()=> {
 
     const { pathname } = location
 
-    console.log(location)
+    const splitLocation = pathname.split('/');
+
 
     return(
         <div className="navbar">
@@ -20,6 +21,7 @@ const Navbar = ()=> {
                 <Link to='/'>
                     <FaHome 
                         className="nav-icon home-nav-icon" 
+                        style={{color: splitLocation[1] === '' ? '#FF6B00' : ''}}
                     />
                 </Link>
             </motion.div>
@@ -30,7 +32,8 @@ const Navbar = ()=> {
             >
                 <Link to='/project'>
                     <FaBriefcase 
-                        className="nav-icon project-nav-icon" 
+                        className="nav-icon project-nav-icon"
+                        style={{color: splitLocation[1] === 'project' ? '#FF6B00' : ''}}
                     />
                 </Link>
                 
@@ -42,7 +45,8 @@ const Navbar = ()=> {
             >
                 <Link to='/contact'>
                     <FaPhone 
-                        className="nav-icon contact-nav-icon" 
+                        className="nav-icon contact-nav-icon"
+                        style={{color: splitLocation[1] === 'contact' ? '#FF6B00' : ''}}
                     />
                 </Link>
                 
