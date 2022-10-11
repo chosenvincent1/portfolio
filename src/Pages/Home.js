@@ -21,6 +21,17 @@ const homeVariants = {
     },
     visibleSocialMedia: {
         scale: 1.2
+    },
+    hidden: {
+        y: '-100vh'
+    },
+    visible: {
+        y: '0',
+        transition: {
+            delay: 0.5,
+            type: 'spring',
+            stiffness: 20
+        }
     }
 }
 
@@ -40,7 +51,12 @@ const Home = ()=> {
                 exit='exit'
             >
             <SecondNavbar className='second-navbar' />
-                <div className="home-text">
+                <motion.div 
+                    className="home-text"
+                    variants={homeVariants}
+                    initial='hidden'
+                    animate='visible'
+                >
                         <p className="first-p">hello!</p>
                         <p className="second-p">i'm chosen,</p>
                         <p className="third-p"
@@ -94,7 +110,7 @@ const Home = ()=> {
                                 <FaFacebook className='social-icon' />
                             </motion.a>
                         </div>
-                    </div>
+                    </motion.div>
             </motion.section>
         </div>
     )
