@@ -1,17 +1,16 @@
 import React, { useState } from "react";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import Card from "../Components/Card";
-import ImageCircle from "../Components/ImageCircle";
 import Data from "../Projects/Data";
 import { motion } from "framer-motion";
-
 
 const containerVariants = {
     exit: {
         x: '-100vw',
-        transition: {ease: 'easeInOut'}
+        transition: {ease: 'easeIn'}
     }
 }
+
 
 const Project = ()=> {
     const [hover, setHover] = useState(false);
@@ -50,7 +49,7 @@ const Project = ()=> {
         setHover(true)  
     }
     const handleMouseOut = ()=> {
-        setHover(false)
+        setHover(false) 
     }
 
 

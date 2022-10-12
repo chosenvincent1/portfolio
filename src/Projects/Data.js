@@ -1,13 +1,13 @@
 
-export default [
+    const Data = [
     {
-        image: './project/project-5.jpeg',
-        name: 'Farm Website',
+        image: './images/fashion.jpeg',
+        name: 'Shopping Website',
         description: 'Frontend Project',
         link: 'https://www.twitter.com/chosenvincent1'
     },
     {
-        image: './project/project-6.jpg',
+        image: './images/farm.jpg',
         name: 'Music Website',
         description: 'FullStack Project',
         link: 'https://github.com/chosenvincent1'
@@ -49,3 +49,5 @@ export default [
         link: 'https://www.instagram.com/chosenvincent1'
     }
 ]
+
+export default Data

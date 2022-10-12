@@ -18,7 +18,7 @@ const contactVariants = {
 const containerVariants = {
     exit: {
         x: '-100vw',
-        transition: {ease: 'easeInOut'}
+        transition: {ease: 'easeIn'}
     }
 }
 
