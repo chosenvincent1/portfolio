@@ -27,7 +27,7 @@ const Card = ({image, name, description, link, currentIndexValue})=> {
             onClick={redirect}
             whileHover={{ scale: 1.1 }}
         >
-            {/* <img src={currentIndexValue.image} /> */}
+            <img src='../images/farm.jpg' />
         </motion.div>
     )
 }

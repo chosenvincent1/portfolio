@@ -1,7 +1,7 @@
 
     const Data = [
     {
-        image: './images/fashion.jpeg',
+        image: './src/images/fashion.jpeg',
         name: 'Shopping Website',
         description: 'Frontend Project',
         link: 'https://www.twitter.com/chosenvincent1'
