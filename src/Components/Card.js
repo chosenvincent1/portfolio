@@ -25,15 +25,15 @@ const Card = ({link, currentIndexValue})=> {
     
 
     return(
-        <Slider {...settings}>
-        <motion.div 
+        // <Slider {...settings}>
+        <motion.Slider {...settings} 
             className="project-image" 
             onClick={redirect}
             whileHover={{ scale: 1.1 }}
         >
             <img src={currentIndexValue.image} />
-        </motion.div>
-        </Slider>
+        </motion.Slider>
+        // </Slider>
     )
 }
 
