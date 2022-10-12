@@ -87,7 +87,14 @@ const Contact = ()=> {
                             whileHover='visibleSocialMedia'
                         >
                             <FaInstagram className='social-icon' />
-                        </motion.a>                        
+                        </motion.a>
+                        <motion.a 
+                            href='https://www.facebook.com/vincent.chosen.1'
+                            variants={contactVariants}
+                            whileHover='visibleSocialMedia'
+                        >
+                            <FaFacebook className='social-icon' />
+                        </motion.a>                     
                     </div>
                 </div>
                 <form className='contact-form' onSubmit={handleSubmit}>

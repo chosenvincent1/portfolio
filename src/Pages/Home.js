@@ -103,7 +103,7 @@ const Home = ()=> {
                                 <FaInstagram className='social-icon' />
                             </motion.a>
                             <motion.a 
-                                href='https://www.instagram.com/chosenvincent1'
+                                href='https://www.facebook.com/vincent.chosen.1'
                                 variants={homeVariants}
                                 whileHover='visibleSocialMedia'
                             >

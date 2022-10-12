@@ -1,52 +1,47 @@
 
+    import farm from '../images/farm.jpg';
+    import fashion from '../images/fashion.jpeg';
+    import gym from '../images/gym.jpeg';
+    import sport from '../images/sport.jpg';
+    import tech from '../images/tech.jpg';
+    import portfolio from '../images/portfolio.jpeg';
+
     const Data = [
     {
-        image: './src/images/fashion.jpeg',
+        image: farm,
         name: 'Shopping Website',
         description: 'Frontend Project',
         link: 'https://www.twitter.com/chosenvincent1'
     },
     {
-        image: './images/farm.jpg',
+        image: fashion,
         name: 'Music Website',
         description: 'FullStack Project',
         link: 'https://github.com/chosenvincent1'
     },
     {
-        image: './project/project-1.jpg',
+        image: gym,
         name: 'Fitness Website',
         description: 'Frontend Project',
         link: 'https://www.instagram.com/chosenvincent1'
     },
     {
-        image: './project/project-2.jpg',
+        image: tech,
         name: 'Dance Website',
         description: 'FullStack Project',
         link: 'https://www.facebook.com/vincent.chosen.1'
     },
     {
-        image: './project/project-3.jpeg',
+        image: sport,
         name: 'Recipe Website',
         description: 'Frontend Project',
         link: 'https://www.instagram.com/chosenvincent1'
     },
     {
-        image: './project/project-4.jpeg',
+        image: portfolio,
         name: 'Trading Website',
         description: 'Frontend Project',
         link: 'https://www.facebook.com/vincent.chosen.1'
-    },
-    {
-        image: './project/project-5.jpeg',
-        name: 'Tech Website',
-        description: 'Frontend Project',
-        link: 'https://www.twitter.com/chosenvincent1'
-    },
-    {
-        image: './project/project-6.jpg',
-        name: 'Clone Website',
-        description: 'Frontend Project',
-        link: 'https://www.instagram.com/chosenvincent1'
     }
 ]
 

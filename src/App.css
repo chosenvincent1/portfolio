@@ -35,9 +35,6 @@ body {
 }
 
 
-
-
-
 .navbar {
   background-color: rgba(142, 142, 142, .5);
   display: flex;
@@ -83,7 +80,7 @@ body {
   font-family: "Autography";
 }
 
-.second-navbar > .hire-me {
+.second-navbar > a > .hire-me {
   padding: 10px 15px;
   background-color: #FF6B00;
   color: white;
@@ -192,18 +189,19 @@ body {
 
 /* PROJECTS */
 .project-image {
-  width: 500px;
   border-radius: 10px;
-  height: 300px;
-  border: 2px solid white;
+  text-align: center;
+  /* border: 2px solid white; */
+  max-width: 100%;
 }
 
 .project-image > img {
-  width: 100%;
+  width: 500px;
   height: auto;
   border-radius: 10px;
   cursor: pointer;
 }
+
 .project-image > img:hover {
   opacity: 0.2;
 }
@@ -454,7 +452,7 @@ body {
     font-size: 2.2rem;
   }
   
-  .second-navbar > .hire-me {
+  .second-navbar > a > .hire-me {
     padding: 8px 13px;
     font-size: 16px;
   }
@@ -541,9 +539,10 @@ body {
     font-size: 2rem;
   }
 
-  .project-image {
+  
+  .project-image > img {
     width: 400px;
-    height: 255px;
+    height: auto;
   }
 
 
@@ -660,7 +659,7 @@ body {
     font-size: 2rem;
   }
   
-  .second-navbar > .hire-me {
+  .second-navbar > a > .hire-me {
     padding: 8px 12px;
     font-size: 16px;
     font-weight: 700;
@@ -757,9 +756,14 @@ body {
   }
   
 
-  .project-image {
+  /* .project-image {
     max-width: 350px;
-    height: 250px;
+    height: auto;
+  } */
+
+  .project-image > img {
+    width: 350px;
+    height: auto;
   }
 
 

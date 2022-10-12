@@ -31,14 +31,16 @@ const SecondNavbar = ()=> {
             <p>chosen</p>
             </div>
             
-            <motion.button 
-                className="hire-me"
-                whileHover={{ 
-                    scale: 1.1,
-                }}
-            >
-                Hire Me
-            </motion.button>
+            <Link to='/contact'>
+                <motion.button 
+                    className="hire-me"
+                    whileHover={{ 
+                        scale: 1.1,
+                    }}
+                >
+                    Hire Me
+                </motion.button>
+            </Link>
         </div>
     )
 }
