@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { 
     FaFacebook, 
     FaGithub, 
@@ -22,7 +22,7 @@ const containerVariants = {
     }
 }
 
-const Contact = ()=> {
+const Contact = ({ setShowModal })=> {
 
     const [isFilePicked, setIsFilePicked] = useState(false);
 
@@ -48,6 +48,12 @@ const Contact = ()=> {
     const handleSubmit = (e)=> {
         e.preventDefault();
     }
+
+    useEffect(()=>{
+        setTimeout(()=>{
+            setShowModal(true)
+        }, 4000)
+    },[setShowModal])
 
     return(
          <div className='contact'>

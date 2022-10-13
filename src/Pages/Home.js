@@ -65,13 +65,15 @@ const Home = ()=> {
                             <br /> 
                             i'm also a MERN Stack Developer”
                         </p>
-                        <motion.button 
-                            className="download-cv"
-                            variants={homeVariants}
-                            animate='visibleButton'
-                        >
-                            Download<br /> Resume
-                        </motion.button>
+                        <a href="/resume.pdf" download>
+                            <motion.button 
+                                className="download-cv"
+                                variants={homeVariants}
+                                animate='visibleButton'
+                            >
+                                Download<br /> Resume
+                            </motion.button>
+                        </a>
 
                         <div className='home-social-media'>
                             <motion.a 
