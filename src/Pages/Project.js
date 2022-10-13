@@ -3,7 +3,6 @@ import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import Card from "../Components/Card";
 import Data from "../Projects/Data";
 import { motion } from "framer-motion";
-// import Farm from '../images/farm.jpg'
 
 const containerVariants = {
     exit: {
@@ -14,6 +13,7 @@ const containerVariants = {
 
 
 const Project = ()=> {
+      
     const [hover, setHover] = useState(false);
     const [slide, setSlide] = useState(Data);
     const [currentPosition, setCurrentPositon] = useState(0)
@@ -82,7 +82,7 @@ const Project = ()=> {
                         <span className="small-text">
                             Click to Visit Site
                         </span>
-                    </p>
+                    </p> 
                     
                     <div className="projects" 
                         onMouseOver={handleMouseOver}
