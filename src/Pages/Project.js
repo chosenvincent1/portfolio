@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
+import { FaAngleLeft, FaAngleRight, FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
 import Card from "../Components/Card";
 import Data from "../Projects/Data";
 import { motion } from "framer-motion";
@@ -66,7 +66,6 @@ const Project = ()=> {
                     <p>I’m a Web Developer and Technical Write. I build amazing UI using HTML, CSS, JavaScript, React and NodeJs.</p>
                     <p>I’m also a student of the University Of Port Harcourt, I’m a proud Nigerian living in my home town of Port Harcourt, Rivers State.</p>
                 </div>
-                {/* <img src={Farm} /> */}
                 <h1>Projects</h1>
                 <div className="project-container">
                     <p 
@@ -83,13 +82,29 @@ const Project = ()=> {
                             Click to Visit Site
                         </span>
                     </p> 
+                    <FaArrowCircleLeft 
+                        style={{
+                            color: 'white',
+                            fontSize: 24,
+                            marginRight: 10,
+                        }}  
+                    />
+                    
                     
                     <div className="projects" 
                         onMouseOver={handleMouseOver}
                         onMouseOut={handleMouseOut}
                     >
+                        
                         <Card currentIndexValue={currentIndexValue} />
                     </div>
+
+                    <FaArrowCircleRight
+                        style={{
+                            color: 'white',
+                            fontSize: 24,
+                        }}  
+                    />
                     
                 </div>
             </motion.section>
