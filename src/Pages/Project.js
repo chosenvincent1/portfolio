@@ -11,7 +11,6 @@ const containerVariants = {
     }
 }
 
-
 const Project = ()=> {
       
     const [hover, setHover] = useState(false);

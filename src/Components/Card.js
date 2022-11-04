@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 
 const Card = ({link, currentIndexValue})=> {
 
-    // const settings = {
+    // let settings = {
     //     dots: true,
     //     infinite: true,
     //     speed: 500,
@@ -24,13 +24,13 @@ const Card = ({link, currentIndexValue})=> {
     
 
     return(
-        
         <motion.div 
             className="project-image" 
             onClick={redirect}
             whileHover={{ scale: 1 }}
         >
-            <img src={currentIndexValue.image} />
+                <img src={currentIndexValue.image} />
+            
         </motion.div>
     )
 }

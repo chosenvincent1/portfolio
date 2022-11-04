@@ -6,7 +6,7 @@ import Modal from './Components/Modal';
 import './App.css';
 import Navbar from './Components/Navbar';
 import { Route, Routes, useLocation } from 'react-router-dom';
-import { AnimatePresence } from 'framer-motion'
+import { AnimatePresence } from 'framer-motion';
 
 
 function App() {
