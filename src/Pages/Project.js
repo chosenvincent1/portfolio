@@ -66,6 +66,7 @@ const Project = ()=> {
                     <p>I’m a Web Developer and Technical Write. I build amazing UI using HTML, CSS, JavaScript, React and NodeJs.</p>
                     <p>I’m also a student of the University Of Port Harcourt, I’m a proud Nigerian living in my home town of Port Harcourt, Rivers State.</p>
                 </div>
+                
                 <h1>Projects</h1>
                 <div className="project-container">
                     <p 
@@ -81,30 +82,31 @@ const Project = ()=> {
                         <span className="small-text">
                             Click to Visit Site
                         </span>
-                    </p> 
-                    <FaArrowCircleLeft 
-                        style={{
-                            color: 'white',
-                            fontSize: 24,
-                            marginRight: 10,
-                        }}  
-                    />
-                    
-                    
-                    <div className="projects" 
-                        onMouseOver={handleMouseOver}
-                        onMouseOut={handleMouseOut}
-                    >
-                        
-                        <Card currentIndexValue={currentIndexValue} />
-                    </div>
+                    </p>
 
-                    <FaArrowCircleRight
-                        style={{
-                            color: 'white',
-                            fontSize: 24,
-                        }}  
-                    />
+                    {/* Project Card */}
+                   <div className="card-container" >
+                        <FaArrowCircleLeft 
+                            className="left-arrow"
+                            onClick={prevProject}
+                            style={{
+                                visibility: currentPosition === 0 ? 'hidden' : 'visible'
+                            }}
+                        />
+                        <div className="projects" 
+                            onMouseOver={handleMouseOver}
+                            onMouseOut={handleMouseOut}
+                        >
+                            <Card currentIndexValue={currentIndexValue} />
+                        </div>
+                        <FaArrowCircleRight 
+                            className="right-arrow"
+                            onClick={nextProject}
+                            style={{
+                                visibility: currentPosition === slide.length - 1 ? 'hidden' : 'visible'
+                            }}
+                        />
+                   </div>
                     
                 </div>
             </motion.section>

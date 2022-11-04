@@ -55,6 +55,7 @@ body {
   flex-direction: column;
   justify-content: center;
 }
+
 .modal > p {
   color: #747474;
   font-weight: bold;
@@ -222,12 +223,11 @@ body {
 .project-image {
   border-radius: 10px;
   text-align: center;
-  /* border: 2px solid white; */
   max-width: 100%;
 }
 
 .project-image > img {
-  width: 500px;
+  width: 400px;
   height: auto;
   border-radius: 10px;
   cursor: pointer;
@@ -278,6 +278,23 @@ body {
   justify-content: center;
   position: relative;
   padding: 0px 20px;
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+}
+
+.left-arrow, .right-arrow {
+  color: gray;
+  font-size: 24px;
+  cursor: pointer;
+}
+.left-arrow {
+  margin-right: 20px;
+}
+.right-arrow {
+  margin-left: 20px;
 }
 
 .project > .first-project-section > .project-container > p {

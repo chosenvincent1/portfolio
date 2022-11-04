@@ -28,7 +28,7 @@ const Card = ({link, currentIndexValue})=> {
         <motion.div 
             className="project-image" 
             onClick={redirect}
-            whileHover={{ scale: 1.1 }}
+            whileHover={{ scale: 1 }}
         >
             <img src={currentIndexValue.image} />
         </motion.div>
