@@ -45,9 +45,19 @@ const Contact = ({ setShowModal })=> {
         setIsFilePicked(true);
     }
 
+
+
     const handleSubmit = (e)=> {
         e.preventDefault();
-        
+        if(
+            data.firstName !== '' && 
+            data.lastName !== '' && 
+            data.email !== '' &&
+            data.message !== '' &&
+            data.file.length !== 0
+        ) {
+            setShowModal(true); 
+        }
     }
 
     // useEffect(()=>{
@@ -64,7 +74,7 @@ const Contact = ({ setShowModal })=> {
                 exit='exit'
             >
                 <div className='contact-text'>
-                    <p className='text-1'>Want to get in touch? Send request</p>
+                    <p className='text-1'>Want to get in touch? Send message</p>
                     <p className='text-2'>You can also contact me on</p>
                     <div className='social-media'>
                         <motion.a 

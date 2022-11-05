@@ -36,7 +36,7 @@ const Modal = ({ showModal })=> {
                         animate='animate'
                         exit='initial'
                     >
-                        <p>Request sent successfully</p>
+                        <p>Message sent successfully</p>
                         <Link to='/'>
                             <button>Go Back to Home</button>
                         </Link>

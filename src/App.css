@@ -201,17 +201,17 @@ body {
   margin-bottom: 50px;
 }
 
-.first-home-section > .home-text > .home-social-media {
+ .home-social-media {
   display: flex;
   justify-content: center;
   width: 100%;
 }
 
-.first-home-section > .home-text > .home-social-media > a {
+.home-social-media > a {
   text-decoration: none;
 }
 
-.first-home-section > .home-text > .home-social-media > a > .social-icon {
+.home-social-media > a > .social-icon {
   font-size: 30px;
   color: white;
   margin-right: 30px;
