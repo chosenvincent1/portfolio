@@ -252,7 +252,7 @@ body {
 
 .project > .first-project-section > .about {
   text-align: center;
-  padding: 10px 10px 0px 10px;
+  padding: 10px 20px 0px 20px;
   margin-bottom: 50px;
 }  
 
@@ -789,7 +789,7 @@ body {
 
   .project > .first-project-section > .about {
     text-align: center;
-    padding: 0;
+    padding: 0 20px;
     margin-bottom: 50px;
   }  
   

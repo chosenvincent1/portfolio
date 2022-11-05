@@ -30,7 +30,7 @@ const Contact = ({ setShowModal })=> {
         firstName: '',
         lastName: '',
         email: '',
-        description: '',
+        message: '',
         file: []
     });
 
@@ -47,13 +47,14 @@ const Contact = ({ setShowModal })=> {
 
     const handleSubmit = (e)=> {
         e.preventDefault();
+        
     }
 
-    useEffect(()=>{
-        setTimeout(()=>{
-            setShowModal(true)
-        }, 4000)
-    },[setShowModal])
+    // useEffect(()=>{
+    //     setTimeout(()=>{
+    //         setShowModal(true)
+    //     }, 4000)
+    // },[setShowModal])
 
     return(
          <div className='contact'>
@@ -63,7 +64,7 @@ const Contact = ({ setShowModal })=> {
                 exit='exit'
             >
                 <div className='contact-text'>
-                    <p className='text-1'>Need a project? Send Request</p>
+                    <p className='text-1'>Want to get in touch? Send request</p>
                     <p className='text-2'>You can also contact me on</p>
                     <div className='social-media'>
                         <motion.a 
@@ -104,7 +105,7 @@ const Contact = ({ setShowModal })=> {
                     </div>
                 </div>
                 <form className='contact-form' onSubmit={handleSubmit}>
-                    <p className='first-p-tag'>I'm interested in a website</p>
+                    <p className='first-p-tag'>Message Me</p>
                     <div className='first-last-name'>
                         <input 
                             type="text" 
@@ -114,7 +115,7 @@ const Contact = ({ setShowModal })=> {
                             value={data.firstName}
                             onChange={handleDataChange}
                         />
-                        <input 
+                        <input
                             type="text" 
                             className="last-name" 
                             placeholder='Last Name'
@@ -133,10 +134,10 @@ const Contact = ({ setShowModal })=> {
                         onChange={handleDataChange}
                     />
                     
-                    <p className='second-p-tag'>Little description about your project</p>
+                    <p className='second-p-tag'>Message</p>
                     <textarea 
-                        name='description'
-                        value={data.description}
+                        name='message'
+                        value={data.message}
                         onChange={handleDataChange}
                     />
                     <label className='add-file' htmlFor='attachment-input'>

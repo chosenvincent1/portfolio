@@ -62,8 +62,7 @@ const Project = ()=> {
             >
                 <div className="about">
                     <h1>about me</h1>
-                    <p>I’m a Web Developer and Technical Write. I build amazing UI using HTML, CSS, JavaScript, React and NodeJs.</p>
-                    <p>I’m also a student of the University Of Port Harcourt, I’m a proud Nigerian living in my home town of Port Harcourt, Rivers State.</p>
+                    <p>I’m a self-taught front-end web developer with a solid background in JavaScript and ReactJS. I’m also familiar with MERN (MongoDB, Express, React and Node.js) software stack. I’m looking for an opportunity to challenge myself and a position where I can offer the best with the knowledge I have acquired so far.</p>
                 </div>
                 
                 <h1>Projects</h1>
