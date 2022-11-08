@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaAngleLeft, FaAngleRight, FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
+import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
 import Card from "../Components/Card";
 import Data from "../Projects/Data";
 import { motion } from "framer-motion";
@@ -16,7 +16,7 @@ const Project = ()=> {
     const [hover, setHover] = useState(false);
     const [slide, setSlide] = useState(Data);
     const [currentPosition, setCurrentPositon] = useState(0)
-    const [activeCircle, setActiveCircle] = useState(false)
+    // const [activeCircle, setActiveCircle] = useState(false)
 
     let currentIndexValue = slide[currentPosition];
     let projectName = Data[currentPosition].name
@@ -41,9 +41,9 @@ const Project = ()=> {
         currentIndexValue = slide[currentPosition];
     }
     
-    const circleClick = ()=> {
-        setActiveCircle(prevActiveCircle => !prevActiveCircle)
-    }
+    // const circleClick = ()=> {
+    //     setActiveCircle(prevActiveCircle => !prevActiveCircle)
+    // }
 
     const handleMouseOver = ()=> {
         setHover(true)  

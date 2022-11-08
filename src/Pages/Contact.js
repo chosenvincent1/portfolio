@@ -45,19 +45,27 @@ const Contact = ({ setShowModal })=> {
         setIsFilePicked(true);
     }
 
+    const formValidation = ()=> {
+        if(
+            data.firstName &&
+            data.lastName && 
+            data.email &&
+            data.message !== '' &&
+
+            data.firstName.length && 
+            data.lastName.length &&
+            data.message.length !== 1 &&
+
+            data.file.length !== 0
+        ) {
+            setShowModal(true);
+        }
+    }
 
 
     const handleSubmit = (e)=> {
         e.preventDefault();
-        if(
-            data.firstName !== '' && 
-            data.lastName !== '' && 
-            data.email !== '' &&
-            data.message !== '' &&
-            data.file.length !== 0
-        ) {
-            setShowModal(true); 
-        }
+        formValidation();
     }
 
     // useEffect(()=>{
